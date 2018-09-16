@@ -234,7 +234,7 @@
   letter-spacing: 0.75px;
 }
 .product {
-  height: 982px;
+  min-height: 982px;
   display: flex;
   justify-content: center;
   font-family: 'Lato', sans-serif;
@@ -356,4 +356,27 @@
 }
 .product-button:hover {
   background-color: #e05c6e;
+}
+.feature {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  height: 529px;
+  margin: 113px 0 97px 0;
+}
+.feature-container {
+  display: flex;
+  width: 1140px;
+}
+.feature-offer {
+  display: flex;
+  width: 767px;
+  height: 529px;
+  background-color: green;
+}
+.feature-list {
+  display: flex;
+  width: 370px;
+  height: 529px;
+  background-color: #222224;
 }
