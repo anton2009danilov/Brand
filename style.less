@@ -424,6 +424,7 @@
     justify-content: center;
     height: 529px;
     margin: 113px 0 97px 0;
+    .font-family;
 }
 
 .feature-container {
@@ -433,9 +434,13 @@
 
 .feature-offer {
     display: flex;
+    flex-flow: column;
     width: 767px;
     height: 529px;
     background-color: green;
+    background-image: url(img/feature-offer.jpg);
+    padding-left: 39px;
+    color: @background-color;
 }
 
 .feature-list {
@@ -443,4 +448,18 @@
     width: 370px;
     height: 529px;
     background-color: #222224;
+}
+
+.feature-headline_1 {
+     font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 146px 0 0 0;
+    
+} 
+.feature-headline_2 {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+    margin: 0;
 }
