@@ -345,3 +345,15 @@
 .addToCart-btn:hover {
   background-color: #f16d7f;
 }
+.product-button {
+  width: 212px;
+  height: 48px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.4px;
+}
+.product-button:hover {
+  background-color: #e05c6e;
+}
