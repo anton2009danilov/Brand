@@ -277,7 +277,7 @@
 }
 
 .product {
-    height: 982px;
+    min-height: 982px;
     display: flex;
     justify-content: center;
     .font-family;
@@ -402,4 +402,129 @@
 
 .addToCart-btn:hover {
     background-color: @design-color;
+}
+
+.product-button {
+    width: 212px;
+    height: 48px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.4px;
+}
+
+.product-button:hover {
+    .button-hover-effect;
+}
+
+.feature {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    height: 529px;
+    margin: 113px 0 97px 0;
+    .font-family;
+}
+
+.feature-container {
+    display: flex;
+    width: 1140px;
+}
+
+.feature-offer {
+    display: flex;
+    flex-flow: column;
+    width: 767px;
+    height: 529px;
+    background-image: url(img/feature-offer.jpg);
+    background-size: cover;
+    padding-left: 39px;
+    color: @background-color;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+//    align-items: center;
+    width: 370px;
+    height: 529px;
+    background-color: #222224;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-box {
+    display: flex;
+//    width: 294px;
+    height: 102px;
+    list-style-type: none;
+}
+
+li.feature-box_one::before {
+    content: '';
+    background: url(img/track-icon.svg) no-repeat;
+    display: inline-block;   
+    width: 49px;    
+    height: 40px;   
+    background-size: 40px;
+    margin: 0 30px 0 35px;
+}
+
+li.feature-box_two::before {
+    content: '';
+    background: url(img/discount-icon.svg) no-repeat;
+    display: inline-block;   
+    width: 49px;    
+    height: 40px;   
+    background-size: 40px;
+    margin: 0  30px 0 35px;
+}
+
+li.feature-box_three::before {
+    content: '';
+    background: url(img/crown-icon.svg) no-repeat;
+    display: flex;
+    width: 49px;    
+    height: 40px;   
+    background-size: 40px;
+    margin: 0 30px 0 35px;
+}
+
+.feature-headline_1 {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 146px 0 0 0;
+}
+
+.feature-headline_2 {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+    margin: 0;
+}
+
+.feature-box_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 219px;
+}
+
+.feature-box_header {
+    margin: 0;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.feature-box_text {
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
 }
