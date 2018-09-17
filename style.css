@@ -487,7 +487,9 @@ li.feature-box_three::before {
 }
 .subscribe-left {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   width: 50%;
   border-right: 1px solid #ffffff;
 }
@@ -520,6 +522,7 @@ li.feature-box_three::before {
   font-style: italic;
   line-height: 26px;
   letter-spacing: 0.4px;
+  margin: 0;
 }
 .subscribe-userName {
   font-size: 16px;
@@ -535,4 +538,27 @@ li.feature-box_three::before {
   letter-spacing: 0.3px;
   line-height: 14px;
   margin: 0;
+}
+.subscribe-controls {
+  display: flex;
+  align-self: flex-start;
+  width: 268px;
+  list-style-type: none;
+  margin-left: 112px;
+}
+.subscribe-controlButton {
+  width: 268px;
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+  margin-right: 13px;
+}
+.subscribe-controlButton:hover {
+  outline: 2px solid #f16d7f;
+}
+.subscribe-controlButton-active {
+  background-color: #f16d7f;
+}
+.subscribe-controlButton-active:hover {
+  outline: none;
 }
