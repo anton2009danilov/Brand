@@ -1,28 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700,900');
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\000039}}
 .design-color {
   color: #f16d7f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000312}}
 .font-family {
   font-family: 'Lato', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000315}}
 .flex-center-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000321}}
 .hover-effect {
   outline: solid 2px #ffeeee;
   border-radius: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000327}}
 .button-hover-effect {
   background-color: #e05c6e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000331}}
 .header {
   font-family: 'Lato', sans-serif;
   display: flex;
@@ -30,7 +24,6 @@
   border: 1px solid #ececec;
   justify-content: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000339}}
 .header-container,
 .navigation-container {
   height: 100%;
@@ -39,20 +32,17 @@
   justify-content: space-between;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000348}}
 .header-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000353}}
 .header-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000357}}
 .logo {
   height: 51px;
   display: flex;
@@ -60,12 +50,10 @@
   text-decoration: none;
   padding: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000365}}
 .logo:hover {
   outline: solid 2px #ffeeee;
   border-radius: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000371}}
 .logo-text {
   font-size: 27px;
   font-weight: 300;
@@ -73,12 +61,10 @@
   letter-spacing: 0.68px;
   margin-left: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000379}}
 .logo-letter {
   color: #f16d7f;
   font-weight: 400;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000384}}
 .header-form {
   display: flex;
   justify-content: flex-end;
@@ -88,19 +74,16 @@
   border: 1px solid #e6e6e6;
   background-color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\0000394}}
 .cart {
   width: 32px;
   height: 29px;
   padding: 10px;
   margin-right: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003101}}
 .cart:hover {
   outline: solid 2px #ffeeee;
   border-radius: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003105}}
 .button {
   display: block;
   text-decoration: none;
@@ -108,7 +91,6 @@
   background-color: #f16d7f;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003113}}
 .account-button {
   min-width: 130px;
   height: 38px;
@@ -117,11 +99,9 @@
   line-height: 38px;
   letter-spacing: 0.38px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003122}}
 .account-button:hover {
   background-color: #e05c6e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003126}}
 .browse-button {
   color: #222222;
   font-family: 'Lato', sans-serif;
@@ -133,29 +113,24 @@
   text-align: center;
   padding: 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003138}}
 .navigation {
   font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003144}}
 .nav-list {
   margin-left: 15%;
   font-family: 'Lato', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003149}}
 .nav-list-item {
   text-decoration: none;
   display: block;
   float: left;
   padding: 0 23.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003156}}
 .nav-list-item:hover {
   text-shadow: 0px 0px 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003160}}
 .nav-list-link {
   display: block;
   text-decoration: none;
@@ -165,7 +140,6 @@
   line-height: 26px;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003170}}
 .slider {
   height: 613px;
   display: flex;
@@ -173,18 +147,15 @@
   font-family: 'Lato', sans-serif;
   background-color: #e8e8e8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003178}}
 .slider-container {
   width: 1140px;
   height: 100%;
   background: url(img/slider-bg.jpg) 0 -50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003184}}
 .slider-text {
   height: 92px;
   margin-top: 224px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003189}}
 .slider-stripe {
   width: 12px;
   height: 92px;
@@ -192,68 +163,57 @@
   background-color: #f16d7f;
   margin: 14px 12px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003197}}
 .slider-text-first {
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 1.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003202}}
 .slider-text-second {
   letter-spacing: 1px;
   font-size: 40px;
   font-weight: 600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003208}}
 .category {
   display: flex;
   justify-content: center;
   height: 823px;
   margin: 98px 0 98px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003215}}
 .category-container {
   width: 1140px;
   display: flex;
   justify-content: space-between;
   flex-flow: wrap column;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003222}}
 .category-item {
   font-family: 'Lato', sans-serif;
   display: flex;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003228}}
 .category-item:hover {
   filter: brightness(1.1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003232}}
 .category-firstItem {
   width: 560px;
   height: 542px;
   background: url(img/category-item1.jpg);
   margin: 0 20px 20px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003239}}
 .category-secondItem {
   width: 560px;
   height: 261px;
   background: url(img/category-item2.jpg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003246}}
 .category-thirdItem {
   width: 560px;
   height: 261px;
   background: url(img/category-item3.jpg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003252}}
 .category-fourthItem {
   width: 560px;
   height: 542px;
   background: url(img/category-item4.jpg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003258}}
 .category-message {
   box-sizing: border-box;
   padding: 16px 20px;
@@ -261,34 +221,29 @@
   background-color: #ffffff;
   margin-top: 46px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003266}}
 .category-firstText {
   font-size: 18px;
   font-weight: 600;
   color: #222222;
   letter-spacing: 0.45px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003273}}
 .category-secondText {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 0.75px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003279}}
 .product {
   min-height: 982px;
   display: flex;
   justify-content: center;
   font-family: 'Lato', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003286}}
 .product-container {
   width: 1140px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003293}}
 .product-title {
   color: #222222;
   font-size: 30px;
@@ -297,7 +252,6 @@
   letter-spacing: 0.75px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003302}}
 .product-text {
   color: #9f9f9f;
   font-size: 14px;
@@ -305,7 +259,6 @@
   letter-spacing: 0.35px;
   margin: 0 0 60px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003311}}
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -314,13 +267,11 @@
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003320}}
 .product-list_item {
   display: flex;
   list-style-type: none;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003326}}
 .product-card {
   display: block;
   position: relative;
@@ -330,30 +281,24 @@
   box-sizing: border-box;
   margin-bottom: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003336}}
 .product-card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003341}}
 .product-card:hover > .product-img {
   filter: brightness(0.4);
   opacity: 0.7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003346}}
 .product-list_item:hover > .addToCart-btn {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003349}}
 .product-card:hover > .addToCart-btn {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003353}}
 .product-img {
   width: 261px;
   height: 280px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003358}}
 .product-name {
   color: #222222;
   font-size: 13px;
@@ -361,7 +306,6 @@
   text-transform: uppercase;
   margin: 8px 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003366}}
 .product-price {
   font-size: 16px;
   font-weight: 4 00;
@@ -369,7 +313,6 @@
   float: left;
   margin: 17px 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003373}}
 .product-stars {
   width: 70px;
   height: 14px;
@@ -381,7 +324,6 @@
   float: right;
   margin: 17px 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003385}}
 .addToCart-btn {
   display: none;
   position: absolute;
@@ -399,11 +341,9 @@
   box-sizing: border-box;
   background: url(img/cart-white.svg) 10px 8px no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003403}}
 .addToCart-btn:hover {
   background-color: #f16d7f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003407}}
 .product-button {
   width: 212px;
   height: 48px;
@@ -413,11 +353,9 @@
   line-height: 52px;
   letter-spacing: 0.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003417}}
 .product-button:hover {
   background-color: #e05c6e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003421}}
 .feature {
   clear: both;
   display: flex;
@@ -426,12 +364,10 @@
   margin: 113px 0 97px 0;
   font-family: 'Lato', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003430}}
 .feature-container {
   display: flex;
   width: 1140px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003435}}
 .feature-offer {
   display: flex;
   flex-flow: column;
@@ -442,7 +378,6 @@
   padding-left: 39px;
   color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003446}}
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -453,13 +388,11 @@
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003458}}
 .feature-box {
   display: flex;
   height: 102px;
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003465}}
 li.feature-box_one::before {
   content: "";
   background: url(img/track-icon.svg) no-repeat;
@@ -471,7 +404,6 @@ li.feature-box_one::before {
   vertical-align: middle;
   margin: 0 30px 0 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003477}}
 li.feature-box_two::before {
   content: "";
   background: url(img/discount-icon.svg) no-repeat;
@@ -483,7 +415,6 @@ li.feature-box_two::before {
   vertical-align: middle;
   margin: 0  30px 0 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003489}}
 li.feature-box_three::before {
   content: "";
   background: url(img/crown-icon.svg) no-repeat;
@@ -495,7 +426,6 @@ li.feature-box_three::before {
   vertical-align: middle;
   margin: 0 30px 0 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003501}}
 .feature-headline_1 {
   font-size: 54px;
   font-weight: 700;
@@ -503,20 +433,17 @@ li.feature-box_three::before {
   letter-spacing: 1.5px;
   margin: 146px 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003509}}
 .feature-headline_2 {
   font-size: 32px;
   letter-spacing: 0.9px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003515}}
 .feature-box_content {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 219px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003522}}
 .feature-box_header {
   margin: 0;
   color: #fbfbfb;
@@ -524,7 +451,6 @@ li.feature-box_three::before {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003530}}
 .feature-box_text {
   color: #fbfbfb;
   font-size: 14px;
@@ -532,7 +458,6 @@ li.feature-box_three::before {
   line-height: 24px;
   letter-spacing: 0.35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003538}}
 .subscribe {
   position: relative;
   height: 438px;
@@ -540,7 +465,6 @@ li.feature-box_three::before {
   justify-content: center;
   font-family: 'Lato', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003546}}
 .subscribe-background {
   position: absolute;
   background-color: #f1f1f1;
@@ -554,14 +478,12 @@ li.feature-box_three::before {
   z-index: -1;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003561}}
 .subscribe-container {
   display: flex;
   justify-content: space-between;
   width: 1140px;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003568}}
 .subscribe-left {
   display: flex;
   flex-wrap: wrap;
@@ -570,18 +492,15 @@ li.feature-box_three::before {
   width: 50%;
   border-right: 1px solid #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003578}}
 .subscribe-feedback {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003584}}
 .subscribe-userCard {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003589}}
 .subscribe-userCard::before {
   content: "";
   background: url(img/user-photo.png) no-repeat;
@@ -592,12 +511,10 @@ li.feature-box_three::before {
   height: 83px;
   background-size: 83px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003600}}
 .subscribe-comment {
   width: 368px;
   margin-left: 112px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003605}}
 .subscribe-commentText {
   color: #222224;
   font-size: 16px;
@@ -606,7 +523,6 @@ li.feature-box_three::before {
   letter-spacing: 0.4px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003614}}
 .subscribe-userName {
   font-size: 16px;
   font-weight: 700;
@@ -614,7 +530,6 @@ li.feature-box_three::before {
   line-height: 26px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003622}}
 .subscribe-userTown {
   color: #222224;
   font-size: 12px;
@@ -623,7 +538,6 @@ li.feature-box_three::before {
   line-height: 14px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003631}}
 .subscribe-controls {
   display: flex;
   align-self: flex-start;
@@ -631,7 +545,6 @@ li.feature-box_three::before {
   list-style-type: none;
   margin-left: 112px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003639}}
 .subscribe-controlButton {
   width: 268px;
   width: 38px;
@@ -639,19 +552,15 @@ li.feature-box_three::before {
   background-color: #d6d6d6;
   margin-right: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003647}}
 .subscribe-controlButton:hover {
   outline: 2px solid #f16d7f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003651}}
 .subscribe-controlButton-active {
   background-color: #f16d7f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003654}}
 .subscribe-controlButton-active:hover {
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003658}}
 .subscribe-formButton {
   margin-left: -3px;
   width: 104px;
@@ -659,8 +568,11 @@ li.feature-box_three::before {
   border-radius: 0 23px 23px 0;
   background-color: #f16d7f;
   border: none;
+  color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Tom\/Desktop\/GeekBrains\/BRAND\/style\.less}line{font-family:\00003667}}
+.subscribe-formButton:hover {
+  background-color: #e05c6e;
+}
 .subscribe-input {
   box-sizing: border-box;
   padding: 0 5px 0 28px;
@@ -669,4 +581,28 @@ li.feature-box_three::before {
   border-radius: 23px 0 0 23px;
   background-color: #e1e1e1;
   border: none;
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.subscribe-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-headerOne {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.subscribe-headerTwo {
+  letter-spacing: 0.35px;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 14px 0 35px 0;
 }
