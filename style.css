@@ -463,11 +463,17 @@ li.feature-box_three::before {
   height: 438px;
   display: flex;
   justify-content: center;
-  background-color: #f1f1f1;
-  opacity: .5;
 }
 .subscribe-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+}
+.subscribe-background {
+  background-color: #f1f1f1;
   width: 1618px;
+  display: flex;
+  justify-content: center;
   background-image: url(img/subscribe-bg.jpg);
   opacity: .5;
   background-size: cover;
