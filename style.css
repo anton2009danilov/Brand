@@ -44,7 +44,6 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 10px;
 }
 .logo:hover {
   outline: solid 2px #ffeeee;
@@ -635,10 +634,35 @@ li.feature-box_three::before {
   height: 537px;
   display: flex;
   justify-content: center;
+  font-family: 'Lato', sans-serif;
 }
 .footer-container {
   margin-top: 109px;
   width: 1140px;
   display: flex;
   justify-content: space-between;
+}
+.footer-logoSection {
+  display: flex;
+  flex-direction: column;
+  width: 427px;
+}
+.footer-text {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+.footer-infoSection {
+  width: 160px;
+  display: flex;
+}
+.footer-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-listLink {
+  display: block;
 }
