@@ -53,6 +53,7 @@
     align-items: center;
 }
 .logo {
+    width: 175px;
     height: 51px;
     display: flex;
     align-items: center;
@@ -755,7 +756,6 @@ li.feature-box_three::before {
 
 
 .footer-logoSection {
-    display: flex;
     flex-direction: column;
     width: 427px;
 }
@@ -770,7 +770,6 @@ li.feature-box_three::before {
 
 .footer-infoSection {
     width: 160px;
-    display: flex;
 }
 
 .footer-list {
@@ -780,5 +779,23 @@ li.feature-box_three::before {
 }
 
 .footer-listLink {
-    display: block;
+     text-decoration: none;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 42px;
+}
+
+.footer-listLink:hover {
+    color: @design-color;
+}
+
+.footer-listTitle {
+    color: @design-color;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    margin-bottom: 30px;
 }

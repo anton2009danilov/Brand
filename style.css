@@ -40,6 +40,7 @@
   align-items: center;
 }
 .logo {
+  width: 175px;
   height: 51px;
   display: flex;
   align-items: center;
@@ -643,7 +644,6 @@ li.feature-box_three::before {
   justify-content: space-between;
 }
 .footer-logoSection {
-  display: flex;
   flex-direction: column;
   width: 427px;
 }
@@ -656,7 +656,6 @@ li.feature-box_three::before {
 }
 .footer-infoSection {
   width: 160px;
-  display: flex;
 }
 .footer-list {
   padding: 0;
@@ -664,5 +663,21 @@ li.feature-box_three::before {
   list-style-type: none;
 }
 .footer-listLink {
-  display: block;
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 42px;
+}
+.footer-listLink:hover {
+  color: #f16d7f;
+}
+.footer-listTitle {
+  color: #f16d7f;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  margin-bottom: 30px;
 }
