@@ -681,3 +681,50 @@ li.feature-box_three::before {
   letter-spacing: 0.45px;
   margin-bottom: 30px;
 }
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  height: 79px;
+  font-family: 'Lato', sans-serif;
+}
+.copyright-container {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright-text {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+}
+.copyright-social {
+  width: 192px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-socialLink {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-color: #ffffff;
+  color: #b2b2b2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+.copyright-socialLink:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+.copyright-socialLink:active {
+  background-color: #ededed;
+  color: #d6d6d6;
+}
