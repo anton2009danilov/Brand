@@ -6,11 +6,6 @@
 .font-family {
   font-family: 'Lato', sans-serif;
 }
-.flex-center-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .hover-effect {
   outline: solid 2px #ffeeee;
   border-radius: 7px;
@@ -635,4 +630,15 @@ li.feature-box_three::before {
   font-size: 14px;
   font-weight: 400;
   margin: 14px 0 35px 0;
+}
+.footer {
+  height: 537px;
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  margin-top: 109px;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
 }
