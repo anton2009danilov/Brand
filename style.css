@@ -744,17 +744,39 @@ li.feature-box_three::before {
 }
 .browse-navigation {
   width: 262px;
-  height: 530px;
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   position: absolute;
+  padding: 5px 15px;
+  box-sizing: border-box;
 }
 .browseBlock {
   position: relative;
 }
 .browse-list {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   list-style-type: none;
+}
+.browse-link {
+  text-decoration: none;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+.browse-link:hover {
+  color: #f16d7f;
+}
+.browse-title {
+  height: 40px;
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  border-bottom: 1px solid #e8e8e8;
 }
