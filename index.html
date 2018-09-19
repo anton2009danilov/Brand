@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>THE BRAND - Main Page</title>
     <link rel="stylesheet" href="normalize.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -18,9 +17,45 @@
                 <h3 class="logo-text">BRAN<span class="design-color logo-letter">D</span></h3>
                 </a>
                 <form class="header-form" action="#">
-                    <a class="browse-button" href="#">Browse</a>
+                   <details class="browseBlock">
+                       <summary class="browse-button">Browse</summary>
+                            <nav class="browse-navigation">
+                                <section class="browse-section">
+                                   <header class="browse-title">Women</header>
+                                    <ul class="browse-list">
+                                       <li class="browse-item"><a href="#" class="browse-link">Dresses</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Tops</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Sweaters/Knits</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Jackets/Coats</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Blazers</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Denim</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Leggings/Pants</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Skirts/Shorts</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Accessories </a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Bags/Purses</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Swimwear/Underwear</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Nightwear</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Shoes</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Beauty</a></li>
+                                    </ul>
+                                </section>
+                                <section class="browse-section">
+                                    <header class="browse-title">Men</header>
+                                    <ul class="browse-list">
+                                       <li class="browse-item"><a href="#" class="browse-link">Tees/Tank tops</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Shirts/Polos</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Sweaters</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Sweatshirts/Hoodies</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Blazers</a></li>
+                                       <li class="browse-item"><a href="#" class="browse-link">Jackets/vests   </a></li>
+                                    </ul>
+                                </section>
+                            </nav>
+                   </details>
                     <input class="header-searchField" type="text" placeholder="Search for Item...">
-                    <button class="header-searchButton"type="submit">0</button>
+                    <button class="header-searchButton"type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
             <div class="header-right">
@@ -90,76 +125,140 @@
        
             <ul class="product-list">
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card1-img.jpg" alt="card1-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card2-img.jpg" alt="card2-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                       <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card3-img.jpg" alt="card3-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card4-img.jpg" alt="card4-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="addToCart-btn">Add to Cart</a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card5-img.jpg" alt="card5-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card6-img.jpg" alt="card6-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card7-img.jpg" alt="card7-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
                 <li class="product-list_item">
-                    <div href="#" class="product-card">
+                    <a href="#" class="product-card">
                        <img src="img/card8-img.jpg" alt="card8-img" class="product-img">
-                        <h3 class="product-name">Mango People T-shirt</h3>
-                        <h3 class="product-price design-color">&#36;52.00</h3>
-                        <div class="product-stars">*****</div>
+                        <div class="product-text-box">
+                            <h3 class="product-name">Mango People T-shirt</h3>
+                            <h3 class="product-price design-color">&#36;52.00</h3>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                         <a href="" class="addToCart-btn">Add to Cart</a>
-                    </div>
+                    </a>
                 </li>
             </ul>
             <a href="#" class="button product-button">Browse All Product &#160; &#8594;</a>
@@ -173,28 +272,28 @@
             </div>
             <ul class="feature-list">
                 <li class="feature-box feature-box_one">
-                    <div class="feature-box_content">
+                    <article class="feature-box_content">
                         <h3 class="feature-box_header">Free Delivery</h3>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
-                   </div>
+                   </article>
                 </li>
                 <li class="feature-box feature-box_two">
-                    <div class="feature-box_content">
+                    <article class="feature-box_content">
                         <h3 class="feature-box_header">Sales & discounts</h3>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
-                   </div>
+                   </article>
                 </li>
                 <li class="feature-box feature-box_three">
-                   <div class="feature-box_content">
+                   <article class="feature-box_content">
                         <h3 class="feature-box_header">Quality assurance</h3>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
-                   </div>
+                   </article>
                 </li>
             </ul>
         </div>
