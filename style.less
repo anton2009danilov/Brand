@@ -6,6 +6,11 @@
 @background-color-hover: #fff - #011;
 @main-color: #222222;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .design-color {
     color: @design-color;
 }
@@ -393,18 +398,17 @@
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 8px 0 0 15px;
 }
 
 .product-price { 
     font-size: 16px;
-    font-weight: 4 00;
+    font-weight: 400;
     text-transform: uppercase;
     float: left;
-    margin: 17px 0 0 15px;
+    margin-top: 17px;
 }
 .product-stars {
-    width: 70px;
+    width: 100px;
     height: 14px;
     color: #e4af48;
     font-family: "Font Awesome";
@@ -853,4 +857,7 @@ li.feature-box_three::before {
 .copyright-socialLink:active {
     background-color: #ededed;
     color: #d6d6d6;
+}
+.product-text-box {
+    margin: 17px 15px;
 }
