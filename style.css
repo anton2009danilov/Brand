@@ -340,13 +340,14 @@
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 .product-price {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   float: left;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 .product-stars {
   width: 100px;
@@ -357,7 +358,7 @@
   font-weight: 400;
   text-transform: uppercase;
   float: right;
-  margin: 17px 0 0 15px;
+  margin: 15px 0 0 15px;
 }
 .addToCart-btn {
   display: none;
@@ -739,5 +740,5 @@ li.feature-box_three::before {
   color: #d6d6d6;
 }
 .product-text-box {
-  margin: 17px 15px;
+  margin: 15px 15px;
 }
