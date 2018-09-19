@@ -149,6 +149,7 @@
 }
 
 .browse-button {
+    display: block;
     color: #222222;
     .font-family;
     font-size: 14px;
@@ -168,6 +169,19 @@
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
 }
 
+.browse-button::-webkit-details-marker {
+    display: none;
+}
+
+.browse-button::after {
+    content: "\25B6";
+    padding-left: .5em;
+    color: #838383;
+}
+
+.browseBlock[open] > .browse-button::after {
+    content: "\25BC";
+}
 .browse-button:hover {
     filter: brightness(.9);
 }
