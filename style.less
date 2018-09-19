@@ -372,6 +372,7 @@
     display: flex;
     list-style-type: none;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .product-card {
@@ -381,15 +382,15 @@
     width: 261px;
     text-decoration: none;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    
 }
 
-.product-card:hover {
+.product-list_item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
 }
 
-.product-card:hover>.product-img {
+.product-list_item:hover .product-img {
     filter: brightness(.4);
     opacity: (.7);
 }
@@ -887,4 +888,10 @@ li.feature-box_three::before {
 
 .browseBlock {
     position: relative;
+}
+
+.browse-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
