@@ -132,7 +132,7 @@ figure {
     border: 1px solid #fff;
 }
 
-.cartButton-icon::-webkit-details-marker {
+.cart-summary::-webkit-details-marker {
     display: none;
 }
 
@@ -1024,4 +1024,23 @@ li.feature-box_three::before {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
+}
+
+.cart-button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+
+.cart-button:hover {
+    color: @design-color;
+    border-color: @design-color;
 }
