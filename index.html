@@ -59,10 +59,29 @@
                 </form>
             </div>
             <div class="header-right">
-               <a href="#" class="cart">
-                    <img src="img/cart.svg" alt="cart">
-               </a>
-                <a href="#" class="button account-button">My Account      </a>                
+               <details class="cart">
+                   <summary class="cartButton-icon">
+                        <img src="img/cart.svg" alt="cart">
+                   </summary>
+                   <div class="cart-dropdown">
+                       <section class="cart-productSection">
+                          <img src="img/cart-product-img1.jpg" alt="product-image" class="cart-productSection-img">
+                          <div class="cart-textBox">
+                              <h3 class="cart-productName">REBOX ZANE</h3>
+                               <div class="cart-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="cart-ordered">1 x $250</p>
+                          </div>
+                       </section>
+                       
+                   </div>
+               </details>
+                <a href="#" class="button account-button">My Account <i class="fas fa-caret-down fa-caret-down-myAccount"></i></a>                
             </div>
         </div>
     </header>
