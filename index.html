@@ -59,10 +59,60 @@
                 </form>
             </div>
             <div class="header-right">
-               <a href="" class="cart">
-                    <img src="img/cart.svg" alt="cart">
-               </a>
-                <a href="" class="button account-button">My Account      </a>                
+               <details class="cart">
+                   <summary class="cart-summary">
+                        <img src="img/cart.svg" alt="cart">
+                   </summary>
+                   <div class="cart-dropdown">
+                       <section class="cart-productSection">
+                            <a class="cart-productSection-img" href="#">
+                                <img src="img/cart-product-img1.jpg" alt="product-image">
+                            </a>
+                            <div class="cart-textBox">
+                                  <h3 class="cart-productName">REBOX ZANE</h3>
+                                   <div class="cart-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="cart-ordered">1 <span class="cart-ordered-x">x</span> $250</p>
+
+                             </div>
+                             <button action="#" class="cart-deleteButton">
+                                  <i class="fas fa-times-circle"></i>
+                              </button>
+                       </section>
+                       <section class="cart-productSection">
+                          <a class="cart-productSection-img" href="#">
+                                <img src="img/cart-product-img2.jpg" alt="product-image">
+                          </a>
+                          <div class="cart-textBox">
+                              <h3 class="cart-productName">REBOX ZANE</h3>
+                               <div class="cart-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="cart-ordered">1 <span class="cart-ordered-x">x</span> $250</p>
+                                    
+                          </div>
+                          <button action="#" class="cart-deleteButton">
+                              <i class="fas fa-times-circle"></i>
+                          </button>
+                       </section>
+                       <div class="cart-orderTotal">
+                            <p>TOTAL</p>
+                            <p>$500.00</p>
+                       </div>
+                       <a href="#" class="cart-button">CHECKOUT</a>
+                       <a href="#" class="cart-button">Go to cart</a>
+                   </div>
+               </details>
+                <a href="#" class="button account-button">My Account <i class="fas fa-caret-down fa-caret-down-myAccount"></i></a>                
             </div>
         </div>
     </header>
@@ -125,23 +175,28 @@
        
             <ul class="product-list">
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card1-img.jpg" alt="card1-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card1-img.jpg" alt="card1-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                   </figure>
                 </li>
                 <li class="product-list_item">
+                   <figure class="product-figure">
                     <a href="#" class="product-card">
                        <img src="img/card2-img.jpg" alt="card2-img" class="product-img">
                        <div class="product-text-box">
@@ -155,110 +210,137 @@
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
                     </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
+                        </div>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card3-img.jpg" alt="card3-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card3-img.jpg" alt="card3-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card4-img.jpg" alt="card4-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card4-img.jpg" alt="card4-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                    </a>
-                    <a href="" class="addToCart-btn">Add to Cart</a>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card5-img.jpg" alt="card5-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card5-img.jpg" alt="card5-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card6-img.jpg" alt="card6-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card6-img.jpg" alt="card6-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card7-img.jpg" alt="card7-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card7-img.jpg" alt="card7-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                    </figure>
                 </li>
                 <li class="product-list_item">
-                    <a href="#" class="product-card">
-                       <img src="img/card8-img.jpg" alt="card8-img" class="product-img">
-                        <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                   <figure class="product-figure">
+                        <a href="#" class="product-card">
+                           <img src="img/card8-img.jpg" alt="card8-img" class="product-img">
+                            <figcaption class="product-text-box">
+                                <h3 class="product-name">Mango People T-shirt</h3>
+                                <h3 class="product-price design-color">&#36;52.00</h3>
+                                <div class="product-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                        <div class="addToCart-btn-box">
+                            <a href="#" class="addToCart-button">Add to Cart</a>
                         </div>
-                        <a href="" class="addToCart-btn">Add to Cart</a>
-                    </a>
+                    </figure>
                 </li>
             </ul>
             <a href="#" class="button product-button">Browse All Product &#160; &#8594;</a>
@@ -273,7 +355,7 @@
             <ul class="feature-list">
                 <li class="feature-box feature-box_one">
                     <article class="feature-box_content">
-                        <h3 class="feature-box_header">Free Delivery</h3>
+                        <header class="feature-box_header">Free Delivery</header>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
@@ -281,7 +363,7 @@
                 </li>
                 <li class="feature-box feature-box_two">
                     <article class="feature-box_content">
-                        <h3 class="feature-box_header">Sales & discounts</h3>
+                        <header class="feature-box_header">Sales & discounts</header>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
@@ -289,7 +371,7 @@
                 </li>
                 <li class="feature-box feature-box_three">
                    <article class="feature-box_content">
-                        <h3 class="feature-box_header">Quality assurance</h3>
+                        <header class="feature-box_header">Quality assurance</header>
                         <p class="feature-box_text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                         </p>
@@ -325,8 +407,8 @@
                      <h2 class="subscribe-headerOne">SUBSCRIBE</h2>
                      <h3 class="subscribe-headerTwo">FOR OUR NEWLETTER AND PROMOTION</h3>
                      <form action="#" class="subscribe-form">
-                         <input class="subscribe-input" type="text" placeholder="Enter Your Email">
-                         <button class="subscribe-formButton">Subscribe</button>
+                         <input class="subscribe-input" type="email" placeholder="Enter Your Email">
+                         <button type="submit" class="subscribe-formButton">Subscribe</button>
                      </form>
                 </div>
             </div>
