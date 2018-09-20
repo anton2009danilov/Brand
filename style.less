@@ -209,7 +209,7 @@ figure {
 }
 
 .nav-list {
-    margin-left: 15%;
+    margin: 0 0 0 15% ;
     .font-family;
 }
 
@@ -218,10 +218,11 @@ figure {
     display: block;
     float: left;
     padding: 0 23.5px;
+    border-bottom: 3px solid @background-color;
 }
 
 .nav-list-item:hover {
-    text-shadow: 0px 0px 1px;
+    border-bottom: 3px solid @design-color;
 }
 
 .nav-list-link {
@@ -230,7 +231,7 @@ figure {
     color: @main-color;
     font-size: 14px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 48px;
     text-transform: uppercase;
 }
 
@@ -743,6 +744,7 @@ li.feature-box_three::before {
     letter-spacing: 0.35px;
 }
 .subscribe-right {
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;

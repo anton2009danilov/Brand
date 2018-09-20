@@ -165,7 +165,7 @@ figure {
   justify-content: center;
 }
 .nav-list {
-  margin-left: 15%;
+  margin: 0 0 0 15% ;
   font-family: 'Lato', sans-serif;
 }
 .nav-list-item {
@@ -173,9 +173,10 @@ figure {
   display: block;
   float: left;
   padding: 0 23.5px;
+  border-bottom: 3px solid #ffffff;
 }
 .nav-list-item:hover {
-  text-shadow: 0px 0px 1px;
+  border-bottom: 3px solid #f16d7f;
 }
 .nav-list-link {
   display: block;
@@ -183,7 +184,7 @@ figure {
   color: #222222;
   font-size: 14px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 48px;
   text-transform: uppercase;
 }
 .slider {
@@ -625,6 +626,7 @@ li.feature-box_three::before {
   letter-spacing: 0.35px;
 }
 .subscribe-right {
+  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
