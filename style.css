@@ -1032,3 +1032,36 @@ li.feature-box_three::before {
   font-weight: 400;
   text-transform: uppercase;
 }
+.breadcrumb-navigationList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.breadcrumb-navigationList-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #636363;
+  box-sizing: border-box;
+  padding: 0 2px;
+}
+.breadcrumb-navigationList-link:hover {
+  color: #f16d7f;
+}
+.breadcrumb-navigationList-link-active {
+  color: #f16d7f;
+  font-weight: 700;
+}
+.breadcrumb-navigationList-item:after {
+  content: "/";
+}
+.breadcrumb-navigationList-item:last-of-type::after {
+  content: "";
+}
+.breadcrumb-navigationList-item {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #636363;
+  box-sizing: border-box;
+}
