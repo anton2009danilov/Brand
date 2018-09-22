@@ -1012,3 +1012,23 @@ li.feature-box_three::before {
 .nav-list-item-active {
   border-bottom: 3px solid #f16d7f;
 }
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  height: 148px;
+  background-color: #f8f3f4;
+  font-family: 'Lato', sans-serif;
+}
+.breadcrumb-container {
+  width: 1140px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumb-title {
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
