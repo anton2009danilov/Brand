@@ -185,6 +185,9 @@ figure {
   line-height: 48px;
   text-transform: uppercase;
 }
+.nav-list-link:hover {
+  color: #f16d7f;
+}
 .slider {
   height: 613px;
   display: flex;
