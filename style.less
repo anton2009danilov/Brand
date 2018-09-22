@@ -219,6 +219,7 @@ figure {
     float: left;
     padding: 0 23.5px;
     border-bottom: 3px solid @background-color;
+    position: relative;
 }
 
 .nav-list-item:hover {
@@ -1088,6 +1089,22 @@ li.feature-box_three::before {
 //    padding: 0 10px;
 }
 
+.nav-list-name {
+    display: block;
+    text-decoration: none;
+    color: @main-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+//    padding: 0 10px;
+}
+
+.nav-list-item:hover > .nav-list-navigation {
+    display: flex;
+}
+
+
 .nav-list-summary::-webkit-details-marker {
     display: none;
 }
@@ -1100,20 +1117,28 @@ li.feature-box_three::before {
     background-color: #ffffff;
     position: absolute;
     top: 42px;
-//    left: -20px;
-    left: 125px;
-    padding: 0px 25px; 
-    display: flex;
+    left: 0px;
+    padding: 0 0 0 25px;
+    display: none;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.nav-list-details {
-//    position: relative;
+.nav-list-block {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: @main-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+//    padding: 0 10px;
 }
 
 .nav-list-section {
     width: 235px;
+    margin-right: 46px;
 }
 
 .browse-item {
@@ -1128,4 +1153,15 @@ li.feature-box_three::before {
 
 .relative {
     position: relative;
+}
+
+
+
+.nav-list-navigation-positionRight {
+    left: auto;
+    right: 0;
+}
+
+.nav-list-navigation-positionCenter {
+    left: -300px;
 }
