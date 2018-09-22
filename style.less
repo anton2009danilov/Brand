@@ -222,9 +222,9 @@ figure {
     position: relative;
 }
 
-.nav-list-item:hover {
-    border-bottom: 3px solid @design-color;
-}
+//.nav-list-item:hover {
+//    border-bottom: 3px solid @design-color;
+//}
 
 .nav-list-link {
     display: block;
@@ -1119,7 +1119,6 @@ li.feature-box_three::before {
     background-color: #ffffff;
     position: absolute;
     top: 42px;
-    left: 0px;
     padding: 0 0 0 25px;
     display: none;
     flex-wrap: wrap;
@@ -1161,9 +1160,59 @@ li.feature-box_three::before {
 
 .nav-list-navigation-positionRight {
     left: auto;
-    right: 0;
+    right: -190px;
+}
+
+.nav-list-navigation-positionRight:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  right: 265px;
 }
 
 .nav-list-navigation-positionCenter {
     left: -300px;
+}
+
+.nav-list-navigation-positionCenter:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  left: 335px;
+}
+
+.nav-list-navigation-positionLeft {
+    left: 0;
+}
+
+.nav-list-navigation-positionLeft:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: @background-color;
+    border-top: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 35px;
+}
+
+.nav-list-item-active {
+    border-bottom: 3px solid @design-color;
 }
