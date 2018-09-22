@@ -174,6 +174,7 @@ figure {
   float: left;
   padding: 0 23.5px;
   border-bottom: 3px solid #ffffff;
+  position: relative;
 }
 .nav-list-item:hover {
   border-bottom: 3px solid #f16d7f;
@@ -753,6 +754,7 @@ li.feature-box_three::before {
   position: absolute;
   padding: 5px 15px;
   box-sizing: border-box;
+  z-index: 2;
 }
 .browseBlock {
   position: relative;
@@ -907,6 +909,18 @@ li.feature-box_three::before {
   line-height: 48px;
   text-transform: uppercase;
 }
+.nav-list-name {
+  display: block;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.nav-list-item:hover > .nav-list-navigation {
+  display: flex;
+}
 .nav-list-summary::-webkit-details-marker {
   display: none;
 }
@@ -918,14 +932,25 @@ li.feature-box_three::before {
   background-color: #ffffff;
   position: absolute;
   top: 42px;
-  left: 125px;
-  padding: 0px 25px;
-  display: flex;
+  left: 0px;
+  padding: 0 0 0 25px;
+  display: none;
   flex-wrap: wrap;
   flex-direction: column;
 }
+.nav-list-block {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
 .nav-list-section {
   width: 235px;
+  margin-right: 46px;
 }
 .nav-list-superSale {
   display: block;
@@ -934,4 +959,11 @@ li.feature-box_three::before {
 }
 .relative {
   position: relative;
+}
+.nav-list-navigation-positionRight {
+  left: auto;
+  right: 0;
+}
+.nav-list-navigation-positionCenter {
+  left: -300px;
 }
