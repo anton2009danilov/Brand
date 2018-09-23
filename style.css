@@ -290,7 +290,7 @@ figure {
   font-family: 'Lato', sans-serif;
 }
 .product-container {
-  width: 1140px;
+  width: 846px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1222,7 +1222,55 @@ li.feature-box_three::before {
   width: 262px;
 }
 .sortByBar {
+  display: flex;
+  align-items: center;
   width: 846px;
   height: 50px;
   background-color: #f3f3f3;
+}
+.sortByBar-label {
+  padding: 9px 8px 9px 11px;
+  color: #6f6e6e;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+}
+.sortByBar-select {
+  padding: 8px 8px 7px 11px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-left: none;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+.sortResult {
+  margin: 48px 0 ;
+  width: 846px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sortResult-button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff;
+  color: #ef5b70;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 44px;
+}
+.sortResult-button:hover {
+  color: #ffffff;
+  background-color: #f16d7f;
 }
