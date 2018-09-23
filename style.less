@@ -1301,7 +1301,9 @@ li.feature-box_three::before {
 
 .sidebar {
     width: 243px;
+    min-height: 100%;
     align-self: flex-start;
+    margin-right: 50px;
 }
 
 .sidebar-blockList {
@@ -1375,3 +1377,24 @@ li.feature-box_three::before {
 .topFilter {
     display: flex;
 }
+
+.topFilter-radioButton {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.topFilter-radioButton:checked + span {
+    color: @design-color;
+}
+
+.topFilter-radioButtonLabel:after {
+    content: "|";
+    color: #dfdfdf;
+}
+
+.topFilter-form label:last-of-type:after {
+    content: none;
+}
+
+
