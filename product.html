@@ -564,80 +564,84 @@
                     </ul>
                 </details>
             </nav>
-            <div class="topFilter">
-                <section class="topFilter-brandSection">
-                    <header class="topFilter-header">Trending now</header>
-                    <form class="topFilter-radioButtonForm" action="#">
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Bohemian</span>
-                        </label>
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Floral</span>
-                        </label>
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Lace</span>
-                        </label>
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Floral</span>
-                        </label>
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Lace</span>
-                        </label>
-                        <label class="topFilter-radioButtonLabel">
-                            <input class="topFilter-radioButton" type="radio" name="brandName">
-                            <span class="topFilter-inputText">Bohemian</span>
-                        </label>
-                    </form>
-                </section>
-                <section class="topFilter-sizeSection">
-                    <header class="topFilter-header">Size</header>
-                    <form class="topFilter-checkBoxForm" action="#">
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">xxs</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">xs</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">s</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">m</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">l</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">xl</div>
-                        </label>
-                        <label class="topFilter-checkBoxLabel">
-                            <input class="topFilter-checkBox" type="checkbox" name="size">
-                            <div class="topFilter-inputText topFilter-CheckBoxText">xxl</div>
-                        </label>
-                    </form>
-                </section>
-                <section class="topFilter-priceSection">
-                    <header class="topFilter-header">Price</header>
-                    <form action="#" oninput="result.value=(priceRange.value)">
-                        <lable for="priceRange">
-                            <input type="range" id="priceRange" name="priceRange" value="10" min="10" max="700" step="10">
-                            <p class="topFilter-inputText">&#36;<output name="result" for="priceRange"></output></p>
-                        </lable>
-                    </form>
-
-                </section>
+            <div class="productBowser-contentBlock">
+                <div class="topFilter">
+                    <section class="topFilter-brandSection">
+                        <header class="topFilter-header">Trending now</header>
+                        <form class="topFilter-radioButtonForm" action="#">
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Bohemian</span>
+                            </label>
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Floral</span>
+                            </label>
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Lace</span>
+                            </label>
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Floral</span>
+                            </label>
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Lace</span>
+                            </label>
+                            <label class="topFilter-radioButtonLabel">
+                                <input class="topFilter-radioButton" type="radio" name="brandName">
+                                <span class="topFilter-inputText">Bohemian</span>
+                            </label>
+                        </form>
+                    </section>
+                    <section class="topFilter-sizeSection">
+                        <header class="topFilter-header">Size</header>
+                        <form class="topFilter-checkBoxForm" action="#">
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">xxs</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">xs</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">s</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">m</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">l</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">xl</div>
+                            </label>
+                            <label class="topFilter-checkBoxLabel">
+                                <input class="topFilter-checkBox" type="checkbox" name="size">
+                                <div class="topFilter-inputText topFilter-CheckBoxText">xxl</div>
+                            </label>
+                        </form>
+                    </section>
+                    <section class="topFilter-priceSection">
+                        <header class="topFilter-header">Price</header>
+                        <form action="#" oninput="result.value=(priceRange.value)">
+                            <lable for="priceRange">
+                                <input type="range" id="priceRange" name="priceRange" value="10" min="10" max="700" step="10">
+                                <p class="topFilter-inputText">&#36;<output name="result" for="priceRange"></output></p>
+                            </lable>
+                        </form>
+                    </section>
+                </div>
+                <div class="sortByBar"></div>
             </div>
+            
+                
         </div>
     </div>
     <div class="subscribe">
