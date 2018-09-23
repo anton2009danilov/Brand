@@ -629,6 +629,13 @@
                 </section>
                 <section class="topFilter-priceSection">
                     <header class="topFilter-header">Price</header>
+                    <form action="#" oninput="result.value=(priceRange.value)">
+                        <lable for="priceRange">
+                            <input type="range" id="priceRange" name="priceRange" value="10" min="10" max="700" step="10">
+                            <p class="topFilter-inputText">&#36;<output name="result" for="priceRange"></output></p>
+                        </lable>
+                    </form>
+
                 </section>
             </div>
         </div>

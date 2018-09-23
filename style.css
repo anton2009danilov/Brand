@@ -1139,7 +1139,9 @@ li.feature-box_three::before {
   color: #f16d7f;
 }
 .topFilter {
+  width: 846px;
   display: flex;
+  justify-content: space-between;
 }
 .topFilter-radioButton {
   position: absolute;
@@ -1175,7 +1177,7 @@ li.feature-box_three::before {
   line-height: 26px;
 }
 .topFilter-CheckBoxText {
-  width: 50px;
+  width: 70px;
   text-transform: uppercase;
   position: relative;
   padding-left: 20px;
@@ -1196,7 +1198,7 @@ li.feature-box_three::before {
   z-index: -1;
 }
 .topFilter-checkBoxForm {
-  width: 200px;
+  width: 280px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1211,5 +1213,11 @@ li.feature-box_three::before {
   text-align: center;
 }
 .topFilter-sizeSection {
-  width: 200px;
+  width: 280px;
+}
+.topFilter-priceSection {
+  width: 262px;
+}
+#priceRange {
+  width: 262px;
 }
