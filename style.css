@@ -1100,6 +1100,9 @@ li.feature-box_three::before {
 .sidebar-blockName:focus {
   outline: 0;
 }
+.sidebar-blockName:hover {
+  color: #f16d7f;
+}
 .sidebar-blockName:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
