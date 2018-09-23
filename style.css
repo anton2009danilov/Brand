@@ -1274,3 +1274,8 @@ li.feature-box_three::before {
   color: #ffffff;
   background-color: #f16d7f;
 }
+.sortResult-paginationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
