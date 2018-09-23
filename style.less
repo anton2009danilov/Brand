@@ -1424,7 +1424,7 @@ li.feature-box_three::before {
     width: 50px;
     text-transform: uppercase;
     position: relative;
-    padding-left: 22px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
@@ -1432,7 +1432,7 @@ li.feature-box_three::before {
     content: "";
     position: absolute;
     left: 0px;
-    top: 2px;
+    top: 6px;
     width: 11px;
     height: 11px;
     border: 1px solid #ebebeb;
@@ -1444,11 +1444,26 @@ li.feature-box_three::before {
     z-index: -1;
 }
 
-
-
 .topFilter-checkBoxForm {
     width: 200px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
+
+.topFilter-checkBoxLabel input:checked + div:before {
+    background-color: #ebebeb;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+//    border: 1px solid ;
+}
+
+.topFilter-sizeSection {
+    width: 200px;
+}
