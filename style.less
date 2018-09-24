@@ -1546,6 +1546,7 @@ li.feature-box_three::before {
 .sortResult-pagination {
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 261px;
     height: 44px;
@@ -1553,6 +1554,7 @@ li.feature-box_three::before {
     border: 1px solid #ebebeb;
     background-color: #ffffff;
     margin: 0;
+    padding: 0;
 }
 
 .sortResult-paginationLink {
@@ -1561,9 +1563,33 @@ li.feature-box_three::before {
     font-size: 16px;
     font-weight: bold;
     line-height: 44px;
+}
 
+.sortResult-paginationItem {
+    margin: 0 8px;
+    position: relative;
+}
+
+.sortResult-paginationItem:first-of-type {
+    margin: 0 8px 0 15px;
+}
+
+.sortResult-paginationItem:last-of-type {
+    margin: 0 15px 0 8px;
+}
+
+.sortResult-paginationItem:nth-of-type(7):after {
+    content: ".....";
+    position: absolute;
+    top: 13px;
+    line-height: 16px;
+    color: #c4c4c4;
 }
 
 .sortResult-paginationLink:hover {
+    color: #ef5b70;    
+}
+
+.sortResult-paginationLink-active {
     color: #ef5b70;    
 }
