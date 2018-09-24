@@ -290,7 +290,7 @@ figure {
   font-family: 'Lato', sans-serif;
 }
 .product-container {
-  width: 846px;
+  width: 1140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1366,7 +1366,7 @@ li.feature-box_three::before {
   justify-content: center;
 }
 .featureBlock-container {
-  padding: 90px 0 115px 0;
+  padding: 90px 0;
   width: 1140px;
   display: flex;
   justify-content: center;
@@ -1390,4 +1390,7 @@ li.feature-box_three::before {
   background-size: 40px;
   background-position: center center;
   vertical-align: middle;
+}
+.cart-img {
+  transform: translateY(2px);
 }
