@@ -1214,6 +1214,9 @@ li.feature-box_three::before {
   font-weight: 400;
   line-height: 26px;
 }
+.topFilter-inputText:hover {
+  color: #000;
+}
 .topFilter-CheckBoxText {
   width: 70px;
   text-transform: uppercase;
