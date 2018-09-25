@@ -1283,9 +1283,7 @@ li.feature-box_three::before {
   font-weight: 400;
   background-color: #fff;
   border: 1px solid #ebebeb;
-  border-left: none;
-  box-sizing: border-box;
-  border-collapse: collapse;
+  margin-left: -1px;
 }
 .sortResult {
   margin: 48px 0 ;
