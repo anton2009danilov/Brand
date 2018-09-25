@@ -1426,21 +1426,6 @@ li.feature-box_three::before {
     justify-content: space-between;
 }
 
-.topFilter-radioButton {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.topFilter-radioButton:checked + span {
-    color: @design-color;
-}
-
-.topFilter-radioButtonLabel:after {
-    content: "|";
-    color: #dfdfdf;
-}
-
 .topFilter-form label:nth-of-type(3):after,
 .topFilter-form label:last-of-type:after {
     content: none;
@@ -1449,7 +1434,9 @@ li.feature-box_three::before {
 
 
 .topFilter-brandSection {
-    width: 176px;
+//    width: 176px;
+    width: 196px;
+    height: 120px;
 }
 
 .topFilter-header {
@@ -1720,7 +1707,6 @@ li.feature-box_three::before {
 .imageSlide-arrowRight {
     padding-right: 3px;
     box-sizing: border-box;
-
 }
 
 .productDescription {
@@ -1734,4 +1720,41 @@ li.feature-box_three::before {
     background-color: #ffffff;
     transform: translateY(-86px);
     border: 1px solid #eaeaea;
+}
+
+.topFilter-trendingList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 -12px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.topFilter-trendingLink {
+    display: block;
+    text-decoration: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 12px;
+}
+
+
+.topFilter-trendingItem {
+    display: flex;
+    align-items: center;
+}
+
+.topFilter-trendingItem:after {
+    content: "|";
+}
+
+.topFilter-trendingItem:nth-of-type(3n):after{
+    content: "";
+}
+
+.topFilter-trendingLink:hover {
+    color: @design-color;
 }
