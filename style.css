@@ -101,6 +101,9 @@ figure {
   margin-right: 16px;
   border: 1px solid #fff;
 }
+.cart-summary {
+  display: block;
+}
 .cart-summary::-webkit-details-marker {
   display: none;
 }
