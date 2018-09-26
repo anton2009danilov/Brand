@@ -100,7 +100,13 @@ figure {
   margin-right: 16px;
   border: 1px solid #fff;
 }
-.cart-summary {
+.cart .cart-icon {
+  display: block;
+}
+.cart .cart-icon:hover {
+  box-shadow: 0 0 5px #ddd;
+}
+.cart:hover .cart-dropdown {
   display: block;
 }
 .cart-summary::-webkit-details-marker {
@@ -868,6 +874,7 @@ li.feature-box_three::before {
   margin-left: 8px;
 }
 .cart-dropdown {
+  display: none;
   width: 262px;
   border-radius: 5px;
   background-color: #ffffff;
