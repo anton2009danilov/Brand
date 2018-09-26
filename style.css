@@ -1425,7 +1425,7 @@ li.feature-box_three::before {
   padding: 73px 261px 121px;
   box-sizing: border-box;
   width: 1167px;
-  height: 777px;
+  height: 730px;
   background-color: #ffffff;
   transform: translateY(-86px);
   border: 1px solid #eaeaea;
@@ -1513,6 +1513,7 @@ li.feature-box_three::before {
   width: 537px;
   display: flex;
   justify-content: space-between;
+  margin: 63px 0 28px;
 }
 .productDescription .productDescription-container .productDescription-formBlock .productDescription-formSection {
   display: flex;
@@ -1531,10 +1532,33 @@ li.feature-box_three::before {
 }
 .productDescription .productDescription-container .productDescription-formBlock .productDescription-formSection .productDescription-quantity {
   width: 144px;
-  height: 31px;
+  height: 35px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding-left: 17px;
+  box-sizing: border-box;
+}
+.productDescription .productDescription-container .productDescription-button {
+  display: block;
+  box-sizing: border-box;
+  width: 537px;
+  height: 55px;
+  border: 1px solid #ef5b70;
+  color: #ef5b70;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 55px;
+  text-align: center;
+  background-image: url(img/cart-pink.svg);
+  background-repeat: no-repeat;
+  background-position: 207px center;
+  padding-left: 40px;
+}
+.productDescription .productDescription-container .productDescription-button:hover {
+  background-image: url(img/cart-white-big.svg);
+  background-color: #ef5b70;
+  color: #fff;
 }
 .topFilter-trendingList {
   list-style-type: none;
