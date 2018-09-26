@@ -1921,3 +1921,52 @@ li.feature-box_three::before {
 .topFilter-trendingLink:hover {
   color: #f16d7f;
 }
+.youMayLikeAlso {
+  font-family: 'Lato', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.youMayLikeAlso-container {
+  width: 1141px;
+  padding-bottom: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.youMayLikeAlso-container .product-list_item {
+  margin: 0;
+  padding: 0;
+}
+.youMayLikeAlso-container .product-img-png {
+  background-color: #e9e9e9;
+  width: 261px;
+  height: 280px;
+  background: #e9e9e9 url(img/youMayAlsoLike2.png) no-repeat center -13px;
+}
+.youMayLikeAlso-container .product-name {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.youMayLikeAlso-header {
+  width: 100%;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
