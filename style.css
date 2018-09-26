@@ -393,7 +393,7 @@ figure {
   background: url(img/cart-white.svg) 10px center no-repeat;
 }
 .addToCart-button:hover {
-  background-color: #f16d7f;
+  box-shadow: 0 0 10px #fff;
 }
 .product-button {
   width: 212px;
