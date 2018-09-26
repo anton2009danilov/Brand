@@ -1472,12 +1472,15 @@ li.feature-box_three::before {
   text-transform: uppercase;
   margin: 18px 0 24px 0;
 }
-.productDescription .productDescription-container .productDescription-textBlock .productDescription-stars {
+.productDescription .productDescription-container .productDescription-textBlock .productDescription-starsBlock {
   color: #f1b746;
   font-family: "Font Awesome";
   font-size: 19px;
   font-weight: 400;
   text-transform: uppercase;
+}
+.productDescription .productDescription-container .productDescription-textBlock .productDescription-starsBlock .productDescription-star {
+  margin-left: -7px;
 }
 .productDescription .productDescription-container .productDescription-textBlock .productDescription-text {
   color: #5e5e5e;
