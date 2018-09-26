@@ -468,9 +468,11 @@
                     <form action="#" class="productDescription-form">
                         <div class="productDescription-selectName" for="selectedColor">CHOOSE COLOR</div>
                         <select class="productDescription-select" id="selectedColor">
-                            <option value="Name">Name</option>
-                            <option value="Date">Date</option>
-                            <option value="Rating">Rating</option>
+                            <option value="Name">
+                                <div class="productDescription-productOptionRed">Red</div>
+                            </option>
+                            <option value="Date">White</option>
+                            <option value="Rating">Green</option>
                         </select>
                     </form>
                 </div>
@@ -478,16 +480,16 @@
                     <form action="#" class="productDescription-form">
                         <div class="productDescription-selectName" for="selectedSize">CHOOSE SIZE</div>
                         <select class="productDescription-select" id="selectedSize">
-                            <option value="female">09</option>
-                            <option value="male">06</option>
-                            <option value="male">03</option>
+                            <option value="XXL">XXL</option>
+                            <option value="XL">XL</option>
+                            <option value="L">L</option>
                         </select>
                     </form>
                 </div>
                 <div class="productDescription-formSection">
                     <form action="#" class="productDescription-form">
                         <div class="productDescription-selectName" for="orderCount">QUANTITY</div>
-                        <input type="number" name="orderCount" value="1" min="1" max="100" step="1">
+                        <input class="productDescription-quantity" type="number" name="orderCount" value="1" min="1" max="100" step="1">
                     </form>
                 </div>
             </div>
