@@ -1430,7 +1430,9 @@ li.feature-box_three::before {
   transform: translateY(-86px);
   border: 1px solid #eaeaea;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .productDescription .productDescription-container .productDescription-textBlock {
   height: 330px;
@@ -1506,6 +1508,15 @@ li.feature-box_three::before {
   font-weight: 700;
   line-height: 24px;
   margin-top: 37px;
+}
+.productDescription .productDescription-container .productDescription-formBlock {
+  width: 537px;
+  display: flex;
+  justify-content: space-between;
+}
+.productDescription .productDescription-container .productDescription-formBlock .productDescription-formSection {
+  display: flex;
+  flex-direction: column;
 }
 .topFilter-trendingList {
   list-style-type: none;

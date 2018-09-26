@@ -1733,7 +1733,9 @@ li.feature-box_three::before {
         transform: translateY(-86px);
         border: 1px solid #eaeaea;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         .productDescription-textBlock{
             height: 330px;
             display: flex;
@@ -1807,6 +1809,15 @@ li.feature-box_three::before {
                 font-weight: 700;
                 line-height: 24px;
                 margin-top: 37px;
+            }
+        }
+        .productDescription-formBlock {
+            width: 537px;
+            display: flex;
+            justify-content: space-between;
+            .productDescription-formSection {
+                display: flex;
+                flex-direction: column;
             }
         }
     }
