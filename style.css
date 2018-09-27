@@ -2010,14 +2010,29 @@ li.feature-box_three::before {
   font-size: 13px;
   font-weight: 400;
   width: 12%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .orderTable-container .orderTable-columnOne {
   width: 40%;
 }
 .orderTable-container .orderTable-headerColumn {
   width: 12%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .orderTable-container .orderTable-row {
   display: -webkit-box;
