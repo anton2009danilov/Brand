@@ -2179,6 +2179,13 @@ li.feature-box_three::before {
   margin-bottom: 20px;
   padding-left: 18px;
 }
+#countryName,
+#dl_states {
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
 .orderForms-adressFormInput {
   display: block;
   width: 355px;
@@ -2189,4 +2196,20 @@ li.feature-box_three::before {
   padding-left: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.orderForms-adressFormInput::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-adressFormInput:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-adressFormInput::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-adressFormInput::placeholder {
+  color: #b1b1b1;
 }
