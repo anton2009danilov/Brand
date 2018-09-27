@@ -2260,6 +2260,7 @@ li.feature-box_three::before {
   font-family: Lato;
   font-size: 13px;
   font-weight: 300;
+  margin-bottom: 25px;
 }
 .orderForms-container .orderForms-discountFormInput::-webkit-input-placeholder {
   color: #b1b1b1;
@@ -2277,6 +2278,7 @@ li.feature-box_three::before {
   color: #000;
   font-size: 14px;
   font-weight: 300;
+  margin: 0 0 24px;
 }
 .orderForms-container .orderForms-proceedToCheck {
   width: 360px;
