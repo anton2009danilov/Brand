@@ -2176,6 +2176,7 @@ li.feature-box_three::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 77px;
 }
 .orderForms-container .orderForms-sectionHeader {
   color: #222222;
@@ -2226,4 +2227,54 @@ li.feature-box_three::before {
 }
 .orderForms-container .orderForms-adressFormInput::placeholder {
   color: #b1b1b1;
+}
+.orderForms-container .orderForms-formButton {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.orderForms-container .orderForms-formButton:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+.orderForms-container .orderForms-discountFormInput {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.orderForms-container .orderForms-discountFormInput::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput::placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
 }
