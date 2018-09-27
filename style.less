@@ -1966,18 +1966,26 @@ li.feature-box_three::before {
         font-size: 13px;
         font-weight: 400;
         width: 12%;
-//        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
         
     }
     .orderTable-columnOne {
         width: 40%;
     }
+    .orderTable-lastColumn {
+    color: #656565;
+    font-size: 13px;
+    width: 4%;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     .orderTable-headerColumn {
         width: 12%;
-//        text-align: center;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -2026,3 +2034,23 @@ li.feature-box_three::before {
 
 
 
+
+
+
+
+
+.cartTable-deleteButton {
+    color: #c0c0c0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    &:hover {
+        filter: brightness(.8);
+        border-radius: 3px;
+    }
+    &:active {
+        outline: #fff;
+        box-shadow: 0 0 4px #ddd;
+        border-radius: 3px;
+    }
+}

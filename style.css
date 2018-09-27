@@ -2019,9 +2019,25 @@ li.feature-box_three::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: uppercase;
 }
 .orderTable-container .orderTable-columnOne {
   width: 40%;
+}
+.orderTable-container .orderTable-lastColumn {
+  color: #656565;
+  font-size: 13px;
+  width: 4%;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .orderTable-container .orderTable-headerColumn {
   width: 12%;
@@ -2079,4 +2095,21 @@ li.feature-box_three::before {
   color: #575757;
   font-weight: 300;
   margin-left: 4px;
+}
+.cartTable-deleteButton {
+  color: #c0c0c0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.cartTable-deleteButton:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  border-radius: 3px;
+}
+.cartTable-deleteButton:active {
+  outline: #fff;
+  -webkit-box-shadow: 0 0 4px #ddd;
+          box-shadow: 0 0 4px #ddd;
+  border-radius: 3px;
 }
