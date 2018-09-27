@@ -1977,6 +1977,7 @@ li.feature-box_three::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'Lato', sans-serif;
 }
 .orderTable-container {
   width: 1142px;
@@ -1996,16 +1997,54 @@ li.feature-box_three::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #eaeaea;
-}
-.orderTable-container .orderTable-column {
   height: 52px;
+  line-height: 52px;
   color: #222222;
   font-size: 13px;
   font-weight: 700;
-  line-height: 52px;
   text-transform: uppercase;
   letter-spacing: -0.2px;
 }
 .orderTable-container .orderTable-columnOne {
   width: 40%;
+}
+.orderTable-container .orderTable-row {
+  margin: 25px 0;
+}
+.orderTable-container .orderTable-itemCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.orderTable-container .orderTable-itemCard .itemCard-img {
+  margin-right: 21px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-header {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-stars {
+  color: #e4af48;
+  font-family: "Font Awesome";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.15em;
+  text-transform: uppercase;
+  margin-top: 11px;
+  margin-bottom: 9px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-text {
+  color: #6f6e6e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.orderTable-container .orderTable-itemCard .itemCard-textMarked {
+  color: #575757;
+  font-weight: 300;
+  margin-left: 4px;
 }
