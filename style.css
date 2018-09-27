@@ -2136,3 +2136,20 @@ li.feature-box_three::before {
           justify-content: space-between;
   margin: 44px 0 63px;
 }
+.orderTable-container .orderTable-buttonsBlock .orderTable-standAloneButton {
+  display: block;
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 39px;
+}
+.orderTable-container .orderTable-buttonsBlock .orderTable-standAloneButton:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
