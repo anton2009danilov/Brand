@@ -1664,7 +1664,7 @@ li.feature-box_three::before {
     vertical-align: middle;
 }
 
-.featureBlock-box_three:before {
+.featureBlock-box_ three:before {
     content: "";
     background: url(img/crown-icon.svg) no-repeat;
     display: flex;
@@ -1946,4 +1946,25 @@ li.feature-box_three::before {
 
 .orderTable-container {
     width: 1142px;
+    display: flex;
+    flex-direction: column;
+    .orderTable-headerRow {
+        display: flex;
+        justify-content: space-between;
+        border-bottom:  1px solid #eaeaea;
+    }
+    .orderTable-column {
+        height: 52px;
+        color: #222222;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 52px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+    }
+    .orderTable-columnOne {
+        width: 40%;
+    }
 }
+
+

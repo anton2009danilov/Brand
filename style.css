@@ -1642,7 +1642,7 @@ li.feature-box_three::before {
   background-position: center center;
   vertical-align: middle;
 }
-.featureBlock-box_three:before {
+.featureBlock-box_ three:before {
   content: "";
   background: url(img/crown-icon.svg) no-repeat;
   display: -webkit-box;
@@ -1980,4 +1980,32 @@ li.feature-box_three::before {
 }
 .orderTable-container {
   width: 1142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.orderTable-container .orderTable-headerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+.orderTable-container .orderTable-column {
+  height: 52px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+.orderTable-container .orderTable-columnOne {
+  width: 40%;
 }
