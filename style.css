@@ -2170,3 +2170,23 @@ li.feature-box_three::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.orderForms-adressFormSelect {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+}
+.orderForms-adressFormInput {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
