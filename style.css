@@ -1970,3 +1970,14 @@ li.feature-box_three::before {
   text-transform: uppercase;
   margin-bottom: 72px;
 }
+.orderTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.orderTable-container {
+  width: 1142px;
+}
