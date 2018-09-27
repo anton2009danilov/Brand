@@ -11,7 +11,7 @@
     <header class="header">
         <div class="header-container">
             <div class="header-left">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                 <img class="logo-img" src="img/logo.png" alt="logo">
                 <h3 class="logo-text">BRAN<span class="design-color logo-letter">D</span></h3>
                 </a>
@@ -58,13 +58,13 @@
                 </form>
             </div>
             <div class="header-right">
-               <details class="cart">
-                   <summary class="cart-summary">
+               <div class="cart">
+                   <a href="#" class="cart-icon">
                         <img class="cart-img"src="img/cart.svg" alt="cart">
-                   </summary>
+                   </a>
                    <div class="cart-dropdown">
                        <section class="cart-productSection">
-                            <a class="cart-productSection-img" href="#">
+                            <a class="cart-productSection-img" href="single-page.html">
                                 <img src="img/cart-product-img1.jpg" alt="product-image">
                             </a>
                             <div class="cart-textBox">
@@ -84,7 +84,7 @@
                               </button>
                        </section>
                        <section class="cart-productSection">
-                          <a class="cart-productSection-img" href="#">
+                          <a class="cart-productSection-img" href="single-page.html">
                                 <img src="img/cart-product-img2.jpg" alt="product-image">
                           </a>
                           <div class="cart-textBox">
@@ -110,7 +110,7 @@
                        <a href="#" class="cart-button">CHECKOUT</a>
                        <a href="#" class="cart-button">Go to cart</a>
                    </div>
-               </details>
+               </div>
                 <a href="#" class="button account-button">My Account <i class="fas fa-caret-down fa-caret-down-myAccount"></i></a>                
             </div>
         </div>
@@ -416,7 +416,7 @@
             <nav class="breadcrumb-navingation">
                 <ul class="breadcrumb-navigationList">
                     <li class="breadcrumb-navigationList-item">
-                        <a href="#" class="breadcrumb-navigationList-link">Home</a>
+                        <a href="index.html" class="breadcrumb-navigationList-link">Home</a>
                     </li>
                     <li class="breadcrumb-navigationList-item">
                         <a href="#" class="breadcrumb-navigationList-link">Men</a>
@@ -569,30 +569,27 @@
                     <section class="topFilter-brandSection">
                         <header class="topFilter-header">Trending now</header>
                         <form class="topFilter-radioButtonForm" action="#">
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Bohemian</span>
-                            </label>
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Floral</span>
-                            </label>
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Lace</span>
-                            </label>
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Floral</span>
-                            </label>
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Lace</span>
-                            </label>
-                            <label class="topFilter-radioButtonLabel">
-                                <input class="topFilter-radioButton" type="radio" name="brandName">
-                                <span class="topFilter-inputText">Bohemian</span>
-                            </label>
+                            <ul class="topFilter-trendingList">
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Bohemian</a>
+                                </li>
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Floral</a>
+                                </li>
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Lace</a>
+                                </li>
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Floral</a>
+                                </li>
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Lace</a>
+                                </li>
+                                <li class="topFilter-trendingItem">
+                                    <a href="single-page.html" class="topFilter-trendingLink">Bohemian</a>
+                                </li>
+                                    
+                            </ul>
                         </form>
                     </section>
                     <section class="topFilter-sizeSection">
@@ -639,18 +636,20 @@
                     </section>
                 </div>
                 <div class="sortByBar">
-                    <label class="sortByBar-label" for="age">Sort By</label>
-                    <select class="sortByBar-select" id="sort">
-                        <option value="Name">Name</option>
-                        <option value="Date">Date</option>
-                        <option value="Rating">Rating</option>
-                    </select>
-                    <label class="sortByBar-label" for="gender">Show</label>
-                    <select class="sortByBar-select" id="displayNumber">
-                        <option value="female">09</option>
-                        <option value="male">06</option>
-                        <option value="male">03</option>
-                    </select>
+                   <form class="sortByBar-form" action="#">
+                        <label class="sortByBar-label" for="sort">Sort By</label>
+                        <select class="sortByBar-select" id="sort">
+                            <option value="Name">Name</option>
+                            <option value="Date">Date</option>
+                            <option value="Rating">Rating</option>
+                        </select>
+                        <label class="sortByBar-label" for="displayNumber">Show</label>
+                        <select class="sortByBar-select" id="displayNumber">
+                            <option value="female">09</option>
+                            <option value="male">06</option>
+                            <option value="male">03</option>
+                        </select>
+                   </form>
                 </div>
                 <div class="sortResult">
                     <ul class="product-list">
@@ -929,7 +928,7 @@
     <div class="footer">
         <div class="footer-container">
             <section class="footer-logoSection">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                 <img class="logo-img" src="img/logo.png" alt="logo">
                 <h3 class="logo-text">BRAN<span class="design-color logo-letter">D</span></h3>
                 </a>
@@ -944,7 +943,7 @@
             <section class="footer-infoSection">
                 <header class="footer-listTitle">COMPANY</header>
                 <ul class="footer-list">
-                    <li class="footer-listItem"><a href="#" class="footer-listLink">Home </a></li>
+                    <li class="footer-listItem"><a href="index.html" class="footer-listLink">Home </a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">Shop</a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">About</a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">How It Works</a></li>
