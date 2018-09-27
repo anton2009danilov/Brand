@@ -2097,24 +2097,7 @@ li.feature-box_three::before {
   font-weight: 300;
   margin-left: 4px;
 }
-.cartTable-deleteButton {
-  color: #c0c0c0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-}
-.cartTable-deleteButton:hover {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
-  border-radius: 3px;
-}
-.cartTable-deleteButton:active {
-  outline: #fff;
-  -webkit-box-shadow: 0 0 4px #ddd;
-          box-shadow: 0 0 4px #ddd;
-  border-radius: 3px;
-}
-.orderTable-quantity {
+.orderTable-container .orderTable-quantity {
   width: 54px;
   height: 30px;
   padding-left: 24px;
@@ -2122,4 +2105,34 @@ li.feature-box_three::before {
           box-sizing: border-box;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
+}
+.orderTable-container .orderTable-deleteButton {
+  width: 32px;
+  height: 32px;
+  color: #c0c0c0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  border: none;
+  background: none;
+}
+.orderTable-container .orderTable-deleteButton:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  border-radius: 3px;
+}
+.orderTable-container .orderTable-deleteButton:active {
+  outline: #fff;
+  -webkit-box-shadow: 0 0 4px #ddd;
+          box-shadow: 0 0 4px #ddd;
+  border-radius: 3px;
+}
+.orderTable-container .orderTable-buttonsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 44px 0 63px;
 }
