@@ -1642,7 +1642,7 @@ li.feature-box_three::before {
   background-position: center center;
   vertical-align: middle;
 }
-.featureBlock-box_three:before {
+.featureBlock-box_ three:before {
   content: "";
   background: url(img/crown-icon.svg) no-repeat;
   display: -webkit-box;
@@ -1977,7 +1977,349 @@ li.feature-box_three::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'Lato', sans-serif;
 }
 .orderTable-container {
   width: 1142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.orderTable-container .orderTable-headerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  height: 52px;
+  line-height: 52px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+.orderTable-container .orderTable-column {
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+.orderTable-container .orderTable-columnOne {
+  width: 40%;
+}
+.orderTable-container .orderTable-lastColumn {
+  color: #656565;
+  font-size: 13px;
+  width: 4%;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.orderTable-container .orderTable-headerColumn {
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.orderTable-container .orderTable-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.orderTable-container .orderTable-itemCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  text-decoration: none;
+}
+.orderTable-container .orderTable-itemCard:hover {
+  -webkit-box-shadow: 2px 0 5px #ddd;
+          box-shadow: 2px 0 5px #ddd;
+}
+.orderTable-container .orderTable-itemCard .itemCard-img {
+  margin-right: 21px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-header {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-stars {
+  color: #e4af48;
+  font-family: "Font Awesome";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.15em;
+  text-transform: uppercase;
+  margin-top: 11px;
+  margin-bottom: 9px;
+}
+.orderTable-container .orderTable-itemCard .itemCard-text {
+  color: #6f6e6e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.orderTable-container .orderTable-itemCard .itemCard-textMarked {
+  color: #575757;
+  font-weight: 300;
+  margin-left: 4px;
+}
+.orderTable-container .orderTable-quantity {
+  width: 54px;
+  height: 30px;
+  padding-left: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+.orderTable-container .orderTable-deleteButton {
+  width: 32px;
+  height: 32px;
+  color: #c0c0c0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  border: none;
+  background: none;
+}
+.orderTable-container .orderTable-deleteButton:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  border-radius: 3px;
+}
+.orderTable-container .orderTable-deleteButton:active {
+  outline: #fff;
+  -webkit-box-shadow: 0 0 4px #ddd;
+          box-shadow: 0 0 4px #ddd;
+  border-radius: 3px;
+}
+.orderTable-container .orderTable-buttonsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 44px 0 63px;
+}
+.orderTable-container .orderTable-buttonsBlock .orderTable-standAloneButton {
+  display: block;
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 39px;
+}
+.orderTable-container .orderTable-buttonsBlock .orderTable-standAloneButton:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+.orderForms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+.orderForms-container {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 77px;
+}
+.orderForms-container .orderForms-sectionHeader {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.orderForms-container .orderForms-adressFormSelect {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+}
+.orderForms-container #countryName,
+.orderForms-container #dl_states {
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.orderForms-container .orderForms-adressFormInput {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.orderForms-container .orderForms-adressFormInput::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-adressFormInput:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-adressFormInput::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-adressFormInput::placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-formButton {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.orderForms-container .orderForms-formButton:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+.orderForms-container .orderForms-discountFormInput {
+  display: block;
+  width: 355px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.orderForms-container .orderForms-discountFormInput::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-discountFormInput::placeholder {
+  color: #b1b1b1;
+}
+.orderForms-container .orderForms-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+.orderForms-container .orderForms-proceedToCheck {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  padding: 40px 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.orderForms-container .orderForms-proceedToCheck-text {
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 0 0 14px 0;
+}
+.orderForms-container .orderForms-proceedToCheck-text .orderForms-proceedToCheck-markedText {
+  margin-left: 15px;
+}
+.orderForms-container .orderForms-CheckOutHeader {
+  height: 38px;
+  text-align: right;
+  border-bottom: 1px solid #e2e2e2;
+}
+.orderForms-container .orderForms-CheckOutHeader .orderForms-markedText {
+  color: #f16d7f;
+  margin-left: 15px;
+}
+.orderForms-container .orderForms-checkOutButton {
+  display: block;
+  width: 273px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f16d7f;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.orderForms-container .orderForms-checkOutButton:hover {
+  color: #f16d7f;
+  background-color: #fff;
 }
