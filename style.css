@@ -2113,3 +2113,12 @@ li.feature-box_three::before {
           box-shadow: 0 0 4px #ddd;
   border-radius: 3px;
 }
+.orderTable-quantity {
+  width: 54px;
+  height: 30px;
+  padding-left: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
