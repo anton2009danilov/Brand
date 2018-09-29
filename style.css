@@ -75,10 +75,13 @@ figure {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  border: solid 2px transparent;
+  border-radius: 7px;
+  -webkit-transition: border .5s;
+  transition: border .5s;
 }
 .logo:hover {
-  outline: solid 2px #ffeeee;
-  border-radius: 7px;
+  border: solid 2px #ffeeee;
 }
 .logo-text {
   font-size: 27px;
