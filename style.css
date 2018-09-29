@@ -1432,6 +1432,8 @@ li.feature-box_three::before {
   font-size: 14px;
   font-weight: 400;
   line-height: 33px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .sidebar-blockLink:hover {
   color: #f16d7f;
@@ -1470,6 +1472,8 @@ li.feature-box_three::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .sidebar-block {
   margin-bottom: 18px;
@@ -1507,6 +1511,8 @@ li.feature-box_three::before {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .topFilter-inputText:hover {
   color: #000;
@@ -1618,6 +1624,8 @@ li.feature-box_three::before {
   font-size: 16px;
   font-weight: bold;
   line-height: 44px;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 .sortResult-button:hover {
   color: #ffffff;
@@ -1657,6 +1665,11 @@ li.feature-box_three::before {
   font-size: 16px;
   font-weight: bold;
   line-height: 44px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.sortResult-paginationLink:hover {
+  color: #ef5b70;
 }
 .sortResult-paginationItem {
   margin: 0 8px;
@@ -1674,9 +1687,6 @@ li.feature-box_three::before {
   top: 13px;
   line-height: 16px;
   color: #c4c4c4;
-}
-.sortResult-paginationLink:hover {
-  color: #ef5b70;
 }
 .sortResult-paginationLink-active {
   color: #ef5b70;
