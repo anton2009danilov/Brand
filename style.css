@@ -833,6 +833,9 @@ li.feature-box_three::before {
   height: 4px;
   background-color: #d6d6d6;
   margin-right: 13px;
+  outline: 2px solid transparent;
+  -webkit-transition: outline .3s;
+  transition: outline .3s;
 }
 .subscribe-controlButton:hover {
   outline: 2px solid #f16d7f;
