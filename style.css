@@ -120,6 +120,8 @@ figure {
   background: none;
   margin: 0;
   padding: 0;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .header-searchButton:hover {
   background-color: #eeeeee;
