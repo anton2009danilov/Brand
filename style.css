@@ -206,6 +206,10 @@ figure {
   background-color: #cdcdcc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  -webkit-transition: -webkit-filter .3s;
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s;
 }
 .browse-button::-webkit-details-marker {
   display: none;
@@ -254,6 +258,8 @@ figure {
   line-height: 48px;
   text-transform: uppercase;
   padding: 0 23.5px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .nav-list-link:hover {
   color: #f16d7f;
@@ -324,6 +330,10 @@ figure {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
+  -webkit-transition: -webkit-filter .5s;
+  transition: -webkit-filter .5s;
+  transition: filter .5s;
+  transition: filter .5s, -webkit-filter .5s;
 }
 .category-item:hover {
   -webkit-filter: brightness(1.1);
@@ -427,6 +437,10 @@ figure {
   list-style-type: none;
   position: relative;
   margin-bottom: 40px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 .product-card {
   display: block;
@@ -440,10 +454,9 @@ figure {
 .product-list_item:hover {
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
 }
 .product-list_item:hover .addToCart-button {
-  display: block;
+  opacity: 1;
 }
 .product-list_item:hover .product-img {
   -webkit-filter: brightness(0.4);
@@ -453,6 +466,10 @@ figure {
 .product-img {
   width: 261px;
   height: 280px;
+  -webkit-transition: opacity .5s, -webkit-filter .5s;
+  transition: opacity .5s, -webkit-filter .5s;
+  transition: filter .5s, opacity .5s;
+  transition: filter .5s, opacity .5s, -webkit-filter .5s;
 }
 .product-name {
   color: #222222;
@@ -480,7 +497,9 @@ figure {
   margin: 15px 0 0 15px;
 }
 .addToCart-button {
-  display: none;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 13px;
