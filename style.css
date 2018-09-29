@@ -1237,8 +1237,8 @@ li.feature-box_three::before {
   top: 42px;
   padding: 0 0 0 25px;
   opacity: 0;
-  -webkit-transition: width .7s, opacity .7s;
-  transition: width .7s, opacity .7s;
+  -webkit-transition: width .7s;
+  transition: width .7s;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
