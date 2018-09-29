@@ -517,6 +517,8 @@ figure {
           box-shadow: 0 0 10px #fff;
 }
 .product-button {
+  -webkit-transition: color 0.3s, background-color 0.3s, border 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
   width: 212px;
   height: 48px;
   color: #ffffff;
@@ -524,9 +526,12 @@ figure {
   font-weight: 700;
   line-height: 52px;
   letter-spacing: 0.4px;
+  border: 1px solid transparent;
 }
 .product-button:hover {
-  background-color: #e05c6e;
+  color: #f16d7f;
+  background-color: #ffffff;
+  border: 1px solid #f16d7f;
 }
 .feature {
   clear: both;

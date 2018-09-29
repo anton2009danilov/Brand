@@ -494,6 +494,7 @@ figure {
 }
 
 .product-button {
+    transition: color .3s, background-color .3s, border .3s;
     width: 212px;
     height: 48px;
     color: #ffffff;
@@ -501,10 +502,13 @@ figure {
     font-weight: 700;
     line-height: 52px;
     letter-spacing: 0.4px;
+    border: 1px solid transparent;
 }
 
 .product-button:hover {
-    .button-hover-effect;
+    color: @design-color;
+    background-color: @background-color;
+    border: 1px solid @design-color;
 }
 
 .feature {
