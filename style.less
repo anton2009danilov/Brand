@@ -66,14 +66,14 @@ figure {
     display: flex;
     align-items: center;
     text-decoration: none;
-//    padding: 10px;
+    border: solid 2px transparent;
+    border-radius: 7px;
+    transition: border .5s;
 }
 
 .logo:hover {
-    .hover-effect;
+    border: solid 2px @background-color-hover;
 }
-
-
 
 .logo-text {
     font-size: 27px;
@@ -116,10 +116,11 @@ figure {
     background: none;
     margin: 0;
     padding: 0;
+    transition: background-color .3s;
 }
 
 .header-searchButton:hover {
-    background-color: #fff-#111;
+    background-color: #fff - #111;
 }
 
 .cart {
@@ -131,15 +132,36 @@ figure {
     border: 1px solid #fff;
     .cart-icon {
         display: block;
+        transition: box-shadow .3s;
     }
     .cart-icon:hover {
         box-shadow: 0 0 5px #ddd;
+    }
+    .cart-dropdown {
+        z-index: 1;
+        opacity: 0;
+        width: 262px;
+        background-color: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        position: absolute;
+        left: -100px;
+        top: -180px;
+        padding: 4px 15px 20px 17px;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: transform .5s, opacity .5s, top .5s, left .5s;
+        transition-delay: .1s;
     }
 }
 
 .cart:hover {
     .cart-dropdown {
-        display: block;
+        opacity: 1;
+        z-index: 1;
+        left: -14px;
+        top: 45px;
+        transform: scale(1.0);
     }
 }
 
@@ -147,10 +169,6 @@ figure {
 
 .cart-summary::-webkit-details-marker {
     display: none;
-}
-
-.cart:hover summary {
-    outline: 1px solid @design-color;
 }
 
 .button {
@@ -167,7 +185,8 @@ figure {
     font-size: 15px;
     font-weight: 400;
     line-height: 38px;
-    letter-spacing: 0.38px;   
+    letter-spacing: 0.38px;
+    transition: background .3s;   
 }
 
 .account-button:hover {
@@ -193,6 +212,7 @@ figure {
     box-sizing: border-box;
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    transition: filter .3s;
 }
 
 .browse-button::-webkit-details-marker {
@@ -234,10 +254,6 @@ figure {
     position: relative;
 }
 
-//.nav-list-item:hover {
-//    border-bottom: 3px solid @design-color;
-//}
-
 .nav-list-link {
     display: block;
     text-decoration: none;
@@ -247,6 +263,7 @@ figure {
     line-height: 48px;
     text-transform: uppercase;
     padding: 0 23.5px;
+    transition: color .3s;
 }
 
 .nav-list-link:hover {
@@ -309,6 +326,7 @@ figure {
     .font-family;
     display: flex;
     text-decoration: none;
+    transition: filter .5s;
 }
 
 .category-item:hover {
@@ -408,6 +426,7 @@ figure {
     list-style-type: none;
     position: relative;
     margin-bottom: 40px;
+    transition: box-shadow .5s;
 }
 
 .product-card {
@@ -422,11 +441,10 @@ figure {
 
 .product-list_item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
 }
 
 .product-list_item:hover .addToCart-button {
-    display: block;
+    opacity: 1;
 }
 
 .product-list_item:hover .product-img {
@@ -437,6 +455,7 @@ figure {
 .product-img {
     width: 261px;
     height: 280px;
+    transition: filter .5s, opacity .5s;
 }
 
 .product-name {
@@ -467,7 +486,8 @@ figure {
 }
 
 .addToCart-button {
-    display: none;
+    transition: opacity .5s, box-shadow .5s;
+    opacity: 0;
     border: 1px solid #ffffff;
     color: @background-color;
     font-size: 13px;
@@ -482,6 +502,7 @@ figure {
 }
 
 .product-button {
+    transition: color .3s, background-color .3s, border .3s;
     width: 212px;
     height: 48px;
     color: #ffffff;
@@ -489,10 +510,13 @@ figure {
     font-weight: 700;
     line-height: 52px;
     letter-spacing: 0.4px;
+    border: 1px solid transparent;
 }
 
 .product-button:hover {
-    .button-hover-effect;
+    color: @design-color;
+    background-color: @background-color;
+    border: 1px solid @design-color;
 }
 
 .feature {
@@ -766,6 +790,8 @@ li.feature-box_three::before {
     height: 4px;
     background-color: #d6d6d6;
     margin-right: 13px;
+    outline: 2px solid transparent;    
+    transition: outline .3s;
 }
 
 .subscribe-controlButton:hover {
@@ -787,6 +813,7 @@ li.feature-box_three::before {
     background-color: @design-color;
     border: none;
     color: @background-color;
+    transition: background-color .3s;
 }
 
 .subscribe-formButton:hover {
@@ -871,12 +898,14 @@ li.feature-box_three::before {
 }
 
 .footer-listLink {
-     text-decoration: none;
+    display: block;
+    text-decoration: none;
     color: #898989;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
     line-height: 42px;
+    transition: color .5s;
 }
 
 .footer-listLink:hover {
@@ -935,6 +964,7 @@ li.feature-box_three::before {
     font-weight: 400;
     line-height: 32px;
     text-align: center;
+    transition: background-color .5s, color .5s;
 }
 
 .copyright-socialLink:hover {
@@ -985,6 +1015,7 @@ li.feature-box_three::before {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.35px;
+    transition: color .3s;
 }
 
 .nav-section-link {
@@ -994,6 +1025,7 @@ li.feature-box_three::before {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.35px;
+    transition: color .3s;
 }
 
 .browse-link:hover {
@@ -1041,32 +1073,17 @@ li.feature-box_three::before {
     display: flex;
 }
 
-
-
-.product-figure {
-    
-}
-
 .fa-caret-down-myAccount {
     margin-left: 8px;
-}
-
-.cart-dropdown {
-    display: none;
-    width: 262px;
-    background-color: #ffffff;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    position: absolute;
-    left: -14px;
-    padding: 4px 15px 20px 17px;
-    box-sizing: border-box;
 }
 
 .cart-productSection-img {
     display: block;
     width: 72px;
     height: 85px;
+    transition: box-shadow .3s;
+    &:hover {
+        box-shadow: 2px 0 5px #ddd;    }
 }
 
 .cart-productName {
@@ -1107,8 +1124,8 @@ li.feature-box_three::before {
     width: 30px;
     color: #c0c0c0;
     border: none;
-//    border-radius: 7.5px;
     background: none;
+    transition: filter .3s;
 }
 
 .cart-deleteButton:hover {
@@ -1136,6 +1153,7 @@ li.feature-box_three::before {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 11px;
+    transition: color .3s, border-color .3s;;
 }
 
 .cart-button:hover {
@@ -1143,35 +1161,17 @@ li.feature-box_three::before {
     border-color: @design-color;
 }
 
-.nav-list-summary {
-    display: block;
-    text-decoration: none;
-    color: @main-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
-//    padding: 0 10px;
-}
-
-.nav-list-name {
-//    display: block;
-//    text-decoration: none;
-//    color: @main-color;
-//    font-size: 14px;
-//    font-weight: 700;
-//    line-height: 48px;
-//    text-transform: uppercase;
-//    padding: 0 10px;
-}
-
 .nav-list-item:hover > .nav-list-navigation {
-    display: flex;
+    opacity: 1;
     z-index: 1;
+    // width: 846px;
 }
 
 .nav-list-navigation {
+    display: flex;
+    z-index: -1;
     width: 846px;
+    // overflow: hidden;
     height: 308px;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
@@ -1179,7 +1179,8 @@ li.feature-box_three::before {
     position: absolute;
     top: 42px;
     padding: 0 0 0 25px;
-    display: none;
+    opacity: 0;
+    transition: opacity .7s;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -1199,10 +1200,6 @@ li.feature-box_three::before {
 .nav-list-section {
     width: 235px;
     margin-right: 46px;
-}
-
-.browse-item {
-    
 }
 
 .nav-list-superSale {
@@ -1311,6 +1308,7 @@ li.feature-box_three::before {
     color: #636363;
     box-sizing: border-box;
     padding: 0 2px;
+    transition: color .3s;
 }
 
 .breadcrumb-navigationList-link:hover {
@@ -1374,6 +1372,7 @@ li.feature-box_three::before {
     font-size: 14px;
     font-weight: 400;
     line-height: 33px;
+    transition: color .3s;
 }
 
 .sidebar-blockLink:hover {
@@ -1416,6 +1415,7 @@ li.feature-box_three::before {
     padding: 0 6px 0 11px;
     display: flex;
     justify-content: space-between;
+    transition: color .3s;
 }
 
 .sidebar-block {
@@ -1424,10 +1424,6 @@ li.feature-box_three::before {
 
 .sidebar-block[open] > .sidebar-blockName {
     color: @design-color;
-}
-
-.sidebar-blockItem {
-    
 }
 
 .topFilter {
@@ -1463,6 +1459,7 @@ li.feature-box_three::before {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+    transition: color .3s;
 }
 
 .topFilter-inputText:hover {
@@ -1576,6 +1573,7 @@ li.feature-box_three::before {
     font-size: 16px;
     font-weight: bold;
     line-height: 44px;
+    transition: color .3s, background-color .3s;
 }
 
 .sortResult-button:hover {
@@ -1609,6 +1607,10 @@ li.feature-box_three::before {
     font-size: 16px;
     font-weight: bold;
     line-height: 44px;
+    transition: color .3s;
+    &:hover {
+        color: #ef5b70;    
+    }
 }
 
 .sortResult-paginationItem {
@@ -1630,10 +1632,6 @@ li.feature-box_three::before {
     top: 13px;
     line-height: 16px;
     color: #c4c4c4;
-}
-
-.sortResult-paginationLink:hover {
-    color: #ef5b70;    
 }
 
 .sortResult-paginationLink-active {
@@ -1703,6 +1701,7 @@ li.feature-box_three::before {
     font-size: 24px;
     font-weight: 400;
     line-height: 51px;
+    transition: filter .3s;
 }
 
 .imageSlide-arrow:hover {
@@ -1855,6 +1854,7 @@ li.feature-box_three::before {
             background-repeat: no-repeat;
             background-position: 207px center;
             padding-left: 40px;
+            transition: background-image .5s, color .5s, background-color .5s;
         }
         .productDescription-button:hover {
             background-image: url(img/cart-white-big.svg);
@@ -1882,6 +1882,7 @@ li.feature-box_three::before {
     font-weight: 400;
     line-height: 26px;
     padding: 0 12px;
+    transition: color .3s;
 }
 
 
@@ -2000,6 +2001,7 @@ li.feature-box_three::before {
         display: flex;
         width: 300px;
         text-decoration: none;
+        transition: box-shadow .5s;
         &:hover {
             box-shadow: 2px 0 5px #ddd;
         }
@@ -2054,6 +2056,8 @@ li.feature-box_three::before {
         line-height: 32px;
         border: none;
         background: none;
+        transition: filter .3s;
+
         &:hover {
             filter: brightness(.8);
             border-radius: 3px;
@@ -2080,6 +2084,7 @@ li.feature-box_three::before {
             line-height: 50px;
             text-align: center;
             padding: 0 39px;
+            transition: color .3s, background-color .3s;
             &:hover {
                 background-color: @design-color;
                 color: #fff;
@@ -2147,6 +2152,7 @@ li.feature-box_three::before {
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
+        transition: color .3s, background-color .3s;
         &:hover {
             background-color: @design-color;
             color: #fff;
@@ -2203,15 +2209,10 @@ li.feature-box_three::before {
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
+        transition: color .3s, background-color .3s;
         &:hover {
             color: @design-color;
             background-color: #fff;
         }
     }
 }
-
-
-
-
-
-
