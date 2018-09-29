@@ -1228,15 +1228,13 @@ li.feature-box_three::before {
 .nav-list-item:hover > .nav-list-navigation {
   opacity: 1;
   z-index: 1;
-  width: 846px;
 }
 .nav-list-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: -1;
-  width: 10px;
-  overflow: hidden;
+  width: 846px;
   height: 308px;
   border: 1px solid #e9e9e9;
   border-radius: 5px;
@@ -1245,8 +1243,8 @@ li.feature-box_three::before {
   top: 42px;
   padding: 0 0 0 25px;
   opacity: 0;
-  -webkit-transition: width .7s;
-  transition: width .7s;
+  -webkit-transition: opacity .7s;
+  transition: opacity .7s;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
