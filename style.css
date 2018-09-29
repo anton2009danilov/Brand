@@ -854,6 +854,8 @@ li.feature-box_three::before {
   background-color: #f16d7f;
   border: none;
   color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 .subscribe-formButton:hover {
   background-color: #e05c6e;
