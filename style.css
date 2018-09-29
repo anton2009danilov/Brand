@@ -1217,15 +1217,6 @@ li.feature-box_three::before {
   color: #f16d7f;
   border-color: #f16d7f;
 }
-.nav-list-summary {
-  display: block;
-  text-decoration: none;
-  color: #222222;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-}
 .nav-list-item:hover > .nav-list-navigation {
   opacity: 1;
   z-index: 1;
