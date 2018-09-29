@@ -947,12 +947,15 @@ li.feature-box_three::before {
   list-style-type: none;
 }
 .footer-listLink {
+  display: block;
   text-decoration: none;
   color: #898989;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
   line-height: 42px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 .footer-listLink:hover {
   color: #f16d7f;
