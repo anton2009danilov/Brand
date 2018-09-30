@@ -2219,7 +2219,86 @@ li.feature-box_three::before {
 .checkoutForms {
     display: flex;
     justify-content: center;
+    .font-family;
 }
+
+.checkoutFormsBlock {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 33px 0;
+}
+
+.checkoutForms-blockHeader {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 39px 0;
+}
+
 .checkoutForms-container {
-    max-width: 1140px;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutFormsSection {
+    width: 50%;
+    margin: 16px 0 16px 35px;
+    // padding: 16px 0;
+    box-sizing: border-box;
+    .checkoutFormsSection-header {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &-text {
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkoutFormsSection-input {
+        display: none;
+    }
+    .checkoutFormsSection-label {
+        color: #222222;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 32px;
+        transition: color .3s;
+        &::before {
+            content: "";
+            margin-right: 14px;
+            transform: translateY(2px);
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url(img/dot-circle.svg) no-repeat;
+            background-size: cover;
+        }
+        &:hover {
+            color: @design-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+.checkoutFormsSection-input:checked + .checkoutFormsSection-label::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(img/dot-circle-active.svg) no-repeat;
+    background-size: cover;
 }
