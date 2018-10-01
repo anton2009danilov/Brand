@@ -133,6 +133,7 @@ figure {
     .cart-icon {
         display: block;
         transition: box-shadow .3s;
+        transition: transform 1s;
     }
     .cart-icon:hover {
         box-shadow: 0 0 5px #ddd;
@@ -156,6 +157,9 @@ figure {
 }
 
 .cart:hover {
+    .cart-icon {
+        transform: rotate(360deg);
+    }
     .cart-dropdown {
         opacity: 1;
         z-index: 1;

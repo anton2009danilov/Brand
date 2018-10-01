@@ -140,6 +140,10 @@ figure {
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .cart .cart-icon:hover {
   -webkit-box-shadow: 0 0 5px #ddd;
@@ -166,6 +170,10 @@ figure {
   transition: transform .5s, opacity .5s, top .5s, left .5s, -webkit-transform .5s;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
+}
+.cart:hover .cart-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .cart:hover .cart-dropdown {
   opacity: 1;
