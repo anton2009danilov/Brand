@@ -2621,6 +2621,8 @@ li.feature-box_three::before {
   color: #222222;
   font-size: 14px;
   font-weight: 400;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .forgotPasswordButton:hover {
   color: #f16d7f;
