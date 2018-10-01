@@ -1164,12 +1164,14 @@ li.feature-box_three::before {
 .nav-list-item:hover > .nav-list-navigation {
     opacity: 1;
     z-index: 1;
+    visibility: visible;
     // width: 846px;
 }
 
 .nav-list-navigation {
     display: flex;
     z-index: -1;
+    visibility: hidden;
     width: 846px;
     // overflow: hidden;
     height: 308px;
@@ -1180,7 +1182,7 @@ li.feature-box_three::before {
     top: 42px;
     padding: 0 0 0 25px;
     opacity: 0;
-    transition: opacity .7s;
+    transition: opacity 1s;
     flex-wrap: wrap;
     flex-direction: column;
 }
