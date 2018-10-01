@@ -1091,9 +1091,11 @@ li.feature-box_three::before {
     padding-right: 5px;
     text-decoration: none;
     height: 85px;
-    transition: box-shadow .3s;
+    transition: box-shadow .3s, transform .3s;
     &:hover {
-        box-shadow: 2px 0 5px #ddd;    }
+        box-shadow: 2px 0 5px #ddd;
+        transform: scale(1.1);
+    }
 }
 
 .cart-productName {
