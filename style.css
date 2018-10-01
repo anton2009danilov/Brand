@@ -2522,3 +2522,35 @@ li.feature-box_three::before {
   background: url(img/dot-circle-active.svg) no-repeat;
   background-size: cover;
 }
+.checkoutFormsSectionList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.checkoutFormsSectionList-item::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f101";
+  margin-right: 4px;
+}
+.checkoutFormsSection-button {
+  text-decoration: none;
+  display: block;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  margin-top: 38px;
+}
+.checkoutFormsSection-button:hover {
+  color: #fff;
+  background-color: #f16d7f;
+}
