@@ -120,7 +120,7 @@
             <ul class="nav-list">
                 <li class="nav-list-item"><a class="nav-list-link" href="index.html">Home</a></li>
                 <li class="nav-list-item nav-list-item-active">
-                       <a href="#" class="nav-list-link nav-list-name relative">Man</a>
+                       <a href="product.html" class="nav-list-link nav-list-name relative">Man</a>
                         <nav class="nav-list-navigation nav-list-navigation-positionLeft">
                             <section class="nav-list-section">
                                <header class="nav-list-title">Women</header>
@@ -438,9 +438,9 @@
                                 <header class="checkoutFormsSection-header">Check as a guest or register</header>
                                 <p class="checkoutFormsSection-text">Register with us for future convenience</p>
                                 <form action="" class="checkoutFormsSection-form">
-                                    <input class="checkoutFormsSection-input" type="radio" name="register" id="checkout-as-guest">
+                                    <input class="checkoutFormsSection-inputRadio" type="radio" name="register" id="checkout-as-guest">
                                     <label class="checkoutFormsSection-label" for="checkout-as-guest">checkout as guest</label>
-                                    <input class="checkoutFormsSection-input" type="radio" name="register" id="registration">    
+                                    <input class="checkoutFormsSection-inputRadio" type="radio" name="register" id="registration">    
                                     <label class="checkoutFormsSection-label" for="registration">register</label>
                                 </form>
                             </section>
@@ -454,13 +454,22 @@
                                     <a href="" class="checkoutFormsSection-button">Continue</a>
                             </section>
                             <section class="checkoutFormsSection">
-                                <header class="checkoutFormsSection-header">Check as a guest or register</header>
-                                <p class="checkoutFormsSection-text">Register with us for future convenience</p>
+                                <header class="checkoutFormsSection-header">Already registed?</header>
                                 <form action="" class="checkoutFormsSection-form">
-                                    <input class="checkoutFormsSection-input" type="radio" name="register" id="checkout-as-guest">
-                                    <label class="checkoutFormsSection-label" for="checkout-as-guest">checkout as guest</label>
-                                    <input class="checkoutFormsSection-input" type="radio" name="register" id="registration">    
-                                    <label class="checkoutFormsSection-label" for="registration">register</label>
+                                    <p class="checkoutFormsSection-text">Please log in below</p>
+                                        <label class="checkoutFormsSection-labelText" for="checkout-as-guest">
+                                            EMAIL ADDRESS
+                                            <span class="requiredMarker">*</span>
+                                        </label>
+                                        <input class="checkoutFormsSection-inputText" type="email" name="register" id="checkout-as-guest" required>
+                                        <label class="checkoutFormsSection-labelText" for="registration">
+                                            PASSWORD
+                                            <span class="requiredMarker">*</span>
+                                        </label>
+                                        <input class="checkoutFormsSection-inputText" type="password" name="register" id="registration" required>    
+                                        <p class="checkoutFormsSection-text requiredMarker">* Required Fields</p>
+                                        <label class="checkoutFormsSection-button" for="loginSubmit">Log in</label>
+                                        <input class="checkoutFormsSection-inputSubmit" id="loginSubmit" type="submit" value="log in">
                                 </form>
                             </section>
                         </div>
