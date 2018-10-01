@@ -1144,16 +1144,26 @@ li.feature-box_three::before {
 .fa-caret-down-myAccount {
   margin-left: 8px;
 }
-.cart-productSection-img {
-  display: block;
-  width: 72px;
+.cart-productSection-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  padding-right: 5px;
+  text-decoration: none;
   height: 85px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
-.cart-productSection-img:hover {
+.cart-productSection-link:hover {
   -webkit-box-shadow: 2px 0 5px #ddd;
           box-shadow: 2px 0 5px #ddd;
 }
