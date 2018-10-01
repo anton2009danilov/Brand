@@ -157,8 +157,7 @@ figure {
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   position: absolute;
-  left: -100px;
-  top: -180px;
+  top: 45px;
   padding: 4px 15px 20px 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -178,7 +177,6 @@ figure {
 .cart:hover .cart-dropdown {
   opacity: 1;
   z-index: 1;
-  left: -14px;
   top: 45px;
   -webkit-transform: scale(1);
           transform: scale(1);
