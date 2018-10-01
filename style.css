@@ -450,10 +450,10 @@ figure {
   list-style-type: none;
   position: relative;
   margin-bottom: 40px;
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  transition: -webkit-box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 .product-card {
   display: block;
@@ -465,6 +465,8 @@ figure {
           box-sizing: border-box;
 }
 .product-list_item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
@@ -537,7 +539,7 @@ figure {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 48px;
   letter-spacing: 0.4px;
   border: 1px solid transparent;
 }
@@ -1728,7 +1730,7 @@ li.feature-box_three::before {
   background-position: center center;
   vertical-align: middle;
 }
-.featureBlock-box_ three:before {
+.featureBlock-box_three:before {
   content: "";
   background: url(img/crown-icon.svg) no-repeat;
   display: -webkit-box;
