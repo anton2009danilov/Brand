@@ -2442,14 +2442,32 @@ li.feature-box_three::before {
 }
 .checkoutFormsBlock {
   border-bottom: 1px solid #e8e8e8;
-  padding: 33px 0;
+  padding: 0 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 465px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.checkoutForms-blockHeader {
+.checkoutFormsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.checkoutFormsList .checkoutFormsList-header {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 39px 0;
+  margin: 0;
+  line-height: 72px;
 }
 .checkoutForms-container {
   width: 1140px;
