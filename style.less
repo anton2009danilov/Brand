@@ -2246,8 +2246,6 @@ li.feature-box_three::before {
     }
 }
 
-
-
 .checkoutForms-container {
     width: 1140px;
     display: flex;
@@ -2275,7 +2273,7 @@ li.feature-box_three::before {
         display: flex;
         flex-direction: column;
     }
-    .checkoutFormsSection-input {
+    .checkoutFormsSection-inputRadio {
         display: none;
     }
     .checkoutFormsSection-label {
@@ -2301,7 +2299,7 @@ li.feature-box_three::before {
     }
 }
 
-.checkoutFormsSection-input:checked + .checkoutFormsSection-label::before{
+.checkoutFormsSection-inputRadio:checked + .checkoutFormsSection-label::before{
     content: "";
     display: inline-block;
     width: 14px;
@@ -2341,4 +2339,36 @@ li.feature-box_three::before {
         color: #fff;
         background-color: @design-color;
     }
+}
+
+.checkoutFormsSection-labelText {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.requiredMarker {
+    color: #ff0d0d;
+}
+
+.checkoutFormsSection-inputText {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0 15px;
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.checkoutFormsSection-inputSubmit {
+    display: none;
+}
+.checkoutFormsSection-inputSubmitLabel {
+
 }
