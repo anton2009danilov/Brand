@@ -2441,7 +2441,6 @@ li.feature-box_three::before {
   font-family: 'Lato', sans-serif;
 }
 .checkoutFormsBlock {
-  border-bottom: 1px solid #e8e8e8;
   padding: 0 0 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2458,7 +2457,7 @@ li.feature-box_three::before {
 }
 .checkoutFormsList {
   list-style-type: none;
-  padding: 0;
+  padding: 65px 0 93px 0;
   margin: 0;
 }
 .checkoutFormsList .checkoutFormsList-header {
@@ -2468,6 +2467,9 @@ li.feature-box_three::before {
   text-transform: uppercase;
   margin: 0;
   line-height: 72px;
+}
+.checkoutFormsList-item {
+  border-bottom: 1px solid #e8e8e8;
 }
 .checkoutForms-container {
   width: 1140px;
@@ -2602,4 +2604,24 @@ li.feature-box_three::before {
 }
 .checkoutFormsSection-inputSubmit {
   display: none;
+}
+.checkoutFormsSectionButtonsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.forgotPasswordButton {
+  display: block;
+  text-decoration: none;
+  margin-top: 38px;
+  margin-left: 32px;
+  line-height: 51px;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+}
+.forgotPasswordButton:hover {
+  color: #f16d7f;
 }
