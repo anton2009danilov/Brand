@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>THE BRAND - Main Page</title>
+    <title>THE BRAND - Checkout Page</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <div class="header-left">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                 <img class="logo-img" src="img/logo.png" alt="logo">
                 <h3 class="logo-text">BRAN<span class="design-color logo-letter">D</span></h3>
                 </a>
@@ -108,7 +107,7 @@
                             <p>TOTAL</p>
                             <p>$500.00</p>
                        </div>
-                       <a href="checkout.html" class="cart-button">CHECKOUT</a>
+                       <a href="#" class="cart-button">CHECKOUT</a>
                        <a href="shopping-cart.html" class="cart-button">Go to cart</a>
                    </div>
                </div>
@@ -119,8 +118,8 @@
     <nav class="navigation">
        <div class="navigation-container">
             <ul class="nav-list">
-                <li class="nav-list-item nav-list-item-active"><a class="nav-list-link" href="#">Home</a></li>
-                <li class="nav-list-item">
+                <li class="nav-list-item"><a class="nav-list-link" href="index.html">Home</a></li>
+                <li class="nav-list-item nav-list-item-active">
                        <a href="product.html" class="nav-list-link nav-list-name relative">Man</a>
                         <nav class="nav-list-navigation nav-list-navigation-positionLeft">
                             <section class="nav-list-section">
@@ -411,294 +410,128 @@
             </ul>
        </div>
     </nav>
-    <div class="slider">
-        <div class="slider-container">
-           <div class="slider-text">
-                <div class="slider-stripe"></div>
-                <div class="slider-text-first">THE BRAND</div>
-                <div class="slider-text-second">OF LUXERIOUS <span class="design-color">FASHION</span></div>   
-           </div>
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <h2 class="breadcrumb-title">New Arrivals</h2>
+            <nav class="breadcrumb-navingation">
+                <ul class="breadcrumb-navigationList">
+                    <li class="breadcrumb-navigationList-item">
+                        <a href="index.html" class="breadcrumb-navigationList-link">Home</a>
+                    </li>
+                    <li class="breadcrumb-navigationList-item">
+                        <a href="product.html" class="breadcrumb-navigationList-link">Men</a>
+                    </li>
+                    <li class="breadcrumb-navigationList-item">
+                        <a href="#" class="breadcrumb-navigationList-link breadcrumb-navigationList-link-active">New Arrivals</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-    <div class="category">
-        <div class="category-container">
-            <a href="#" class="category-item category-firstItem">
-                <div class="category-message">
-                    <div class="category-firstText">HOT DEAL</div>
-                    <div class="category-secondText design-color">FOR MEN</div>
-                </div>
-            </a>
-            <a href="#" class="category-item category-secondItem">
-                <div class="category-message">
-                    <div class="category-firstText">LUXIROUS & TRENDY</div>
-                    <div class="category-secondText design-color">ACCESSORIES</div>
-                </div>
-            </a>
-            <a href="#" class="category-item category-thirdItem">
-                <div class="category-message">
-                    <div class="category-firstText">30% OFFER</div>
-                    <div class="category-secondText design-color">WOMEN</div>
-                </div>
-            </a>
-            <a href="#" class="category-item category-fourthItem">
-                <div class="category-message">
-                    <div class="category-firstText">NEW ARRIVALS</div>
-                    <div class="category-secondText design-color">FOR KIDS</div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="product">
-       <div class="product-container">
-            <h2 class="product-title">Featured Items</h2>
-            <p class="product-text">
-                Shop for items based on what we featured in this week
-            </p>
-       
-            <ul class="product-list">
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card1-img.jpg" alt="card1-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
+    <div class="checkoutForms">
+        <div class="checkoutForms-container">
+            <ul class="checkoutFormsList">
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">01.   Shipping Adress</h3>
+                    <div class="checkoutFormsBlock">
+                            <section class="checkoutFormsSection">
+                                <header class="checkoutFormsSection-header">Check as a guest or register</header>
+                                <p class="checkoutFormsSection-text">Register with us for future convenience</p>
+                                <form action="" class="checkoutFormsSection-form">
+                                    <input class="checkoutFormsSection-inputRadio" type="radio" name="register" id="checkout-as-guest">
+                                    <label class="checkoutFormsSection-label" for="checkout-as-guest">checkout as guest</label>
+                                    <input class="checkoutFormsSection-inputRadio" type="radio" name="register" id="radioRegister">    
+                                    <label class="checkoutFormsSection-label" for="radioRegister">register</label>
+                                    <header class="checkoutFormsSection-header">register and save time!</header>
+                                    <p class="checkoutFormsSection-text">Register with us for future convenience</p>
+                                    <ul class="checkoutFormsSectionList">
+                                        <li class="checkoutFormsSectionList-item checkoutFormsSection-text">Fast and easy checkout</li>
+                                        <li class="checkoutFormsSectionList-item checkoutFormsSection-text">Easy access to your order history and status</li>
+                                    </ul>
+                                    <label class="checkoutFormsSection-button" for="submitContinue">Continue</label>
+                                        <input class="checkoutFormsSection-inputSubmit" id="submitContinue" type="submit" value="log in">
+                                </form>
+                            </section>
+                            <section class="checkoutFormsSection">
+                                <header class="checkoutFormsSection-header">Already registed?</header>
+                                <form action="" class="checkoutFormsSection-form">
+                                    <p class="checkoutFormsSection-text">Please log in below</p>
+                                        <label class="checkoutFormsSection-labelText" for="email">
+                                            EMAIL ADDRESS
+                                            <span class="requiredMarker">*</span>
+                                        </label>
+                                        <input class="checkoutFormsSection-inputText" type="email" name="password" id="email" required>
+                                        <label class="checkoutFormsSection-labelText" for="password">
+                                            PASSWORD
+                                            <span class="requiredMarker">*</span>
+                                        </label>
+                                        <input class="checkoutFormsSection-inputText" type="password" name="password" id="password" required>    
+                                        <p class="checkoutFormsSection-text requiredMarker">* Required Fields</p>
+                                        <div class="checkoutFormsSectionButtonsBlock">
+                                            <label class="checkoutFormsSection-button" for="loginSubmit">Log in</label>
+                                            <input class="checkoutFormsSection-inputSubmit" id="loginSubmit" type="submit" value="log in">
+                                            <a href="#" class="forgotPasswordButton">Forgot Password?</a>
+                                        </div>
+                                </form>
+                            </section>
                         </div>
-                   </figure>
                 </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                    <a href="#" class="product-card">
-                       <img src="img/card2-img.jpg" alt="card2-img" class="product-img">
-                       <div class="product-text-box">
-                            <h3 class="product-name">Mango People T-shirt</h3>
-                            <h3 class="product-price design-color">&#36;52.00</h3>
-                            <div class="product-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">02. BILLING INFORMATION</h3>    
                 </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card3-img.jpg" alt="card3-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">03. SHIPPING INFORMATION</h3>    
                 </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card4-img.jpg" alt="card4-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">04. SHIPPING METHOD</h3>    
                 </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card5-img.jpg" alt="card5-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">05. PAYMENT METHOD</h3>    
                 </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card6-img.jpg" alt="card6-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
-                </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card7-img.jpg" alt="card7-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
-                </li>
-                <li class="product-list_item">
-                   <figure class="product-figure">
-                        <a href="#" class="product-card">
-                           <img src="img/card8-img.jpg" alt="card8-img" class="product-img">
-                            <figcaption class="product-text-box">
-                                <h3 class="product-name">Mango People T-shirt</h3>
-                                <h3 class="product-price design-color">&#36;52.00</h3>
-                                <div class="product-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </figcaption>
-                        </a>
-                        <div class="addToCart-btn-box">
-                            <a href="#" class="addToCart-button">Add to Cart</a>
-                        </div>
-                    </figure>
+                <li class="checkoutFormsList-item">
+                    <h3 class="checkoutFormsList-header">06. ORDER REVIEW</h3>    
                 </li>
             </ul>
-            <a href="#" class="button product-button">Browse All Product &#160; &#8594;</a>
-       </div>
-    </div>
-    <div class="feature">
-        <div class="feature-container">
-            <div class="feature-offer">
-                <h1 class="feature-headline_1">30% <span class="design-color">OFFER</span></h1>
-                <h2 class="feature-headline_2">FOR WOMEN</h2>
-            </div>
-            <ul class="feature-list">
-                <li class="feature-box feature-box_one">
-                    <article class="feature-box_content">
-                        <header class="feature-box_header">Free Delivery</header>
-                        <p class="feature-box_text">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </p>
-                   </article>
-                </li>
-                <li class="feature-box feature-box_two">
-                    <article class="feature-box_content">
-                        <header class="feature-box_header">Sales & discounts</header>
-                        <p class="feature-box_text">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </p>
-                   </article>
-                </li>
-                <li class="feature-box feature-box_three">
-                   <article class="feature-box_content">
-                        <header class="feature-box_header">Quality assurance</header>
-                        <p class="feature-box_text">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </p>
-                   </article>
-                </li>
-            </ul>
+            
         </div>
     </div>
     <div class="subscribe">
         <div class="subscribe-background"></div>
-            <div class="subscribe-container">
-                <div class="subscribe-left">
-                    <ul class="subscribe-feedback">
-                        <li class="subscribe-userCard">
-                            <article class="subscribe-comment">
-                                <p class="subscribe-commentText">
-                                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
-                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                                </p>
-                                <h4 class="subscribe-userName design-color">Bin Burhan</h4>
-                                <h4 class="subscribe-userTown">Dhaka, Bd</h4>
-                            </article>
-                        </li>
-                    </ul>
-                <ul class="subscribe-controls">
-                    <li class="subscribe-controlButton"></li>
-                    <li class="subscribe-controlButton subscribe-controlButton-active"></li>
-                    <li class="subscribe-controlButton"></li>
+        <div class="subscribe-container">
+            <div class="subscribe-left">
+                <ul class="subscribe-feedback">
+                    <li class="subscribe-userCard">
+                        <article class="subscribe-comment">
+                            <p class="subscribe-commentText">
+                                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                            </p>
+                            <h4 class="subscribe-userName design-color">Bin Burhan</h4>
+                            <h4 class="subscribe-userTown">Dhaka, Bd</h4>
+                        </article>
+                    </li>
                 </ul>
-                </div>                    
-                
-                <div class="subscribe-right">
-                     <h2 class="subscribe-headerOne">SUBSCRIBE</h2>
-                     <h3 class="subscribe-headerTwo">FOR OUR NEWLETTER AND PROMOTION</h3>
-                     <form action="#" class="subscribe-form">
-                         <input class="subscribe-input" type="email" placeholder="Enter Your Email">
-                         <button type="submit" class="subscribe-formButton">Subscribe</button>
-                     </form>
-                </div>
+            <ul class="subscribe-controls">
+                <li class="subscribe-controlButton"></li>
+                <li class="subscribe-controlButton subscribe-controlButton-active"></li>
+                <li class="subscribe-controlButton"></li>
+            </ul>
+            </div>                    
+
+            <div class="subscribe-right">
+                 <h2 class="subscribe-headerOne">SUBSCRIBE</h2>
+                 <h3 class="subscribe-headerTwo">FOR OUR NEWLETTER AND PROMOTION</h3>
+                 <form action="#" class="subscribe-form">
+                     <input class="subscribe-input" type="email" placeholder="Enter Your Email">
+                     <button type="submit" class="subscribe-formButton">Subscribe</button>
+                 </form>
             </div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer-container">
             <section class="footer-logoSection">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                 <img class="logo-img" src="img/logo.png" alt="logo">
                 <h3 class="logo-text">BRAN<span class="design-color logo-letter">D</span></h3>
                 </a>
@@ -713,7 +546,7 @@
             <section class="footer-infoSection">
                 <header class="footer-listTitle">COMPANY</header>
                 <ul class="footer-list">
-                    <li class="footer-listItem"><a href="#" class="footer-listLink">Home </a></li>
+                    <li class="footer-listItem"><a href="index.html" class="footer-listLink">Home </a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">Shop</a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">About</a></li>
                     <li class="footer-listItem"><a href="#" class="footer-listLink">How It Works</a></li>

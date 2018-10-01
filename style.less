@@ -1164,12 +1164,14 @@ li.feature-box_three::before {
 .nav-list-item:hover > .nav-list-navigation {
     opacity: 1;
     z-index: 1;
+    visibility: visible;
     // width: 846px;
 }
 
 .nav-list-navigation {
     display: flex;
     z-index: -1;
+    visibility: hidden;
     width: 846px;
     // overflow: hidden;
     height: 308px;
@@ -1180,7 +1182,7 @@ li.feature-box_three::before {
     top: 42px;
     padding: 0 0 0 25px;
     opacity: 0;
-    transition: opacity .7s;
+    transition: opacity 1s;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -2214,5 +2216,182 @@ li.feature-box_three::before {
             color: @design-color;
             background-color: #fff;
         }
+    }
+}
+.checkoutForms {
+    display: flex;
+    justify-content: center;
+    .font-family;
+}
+
+.checkoutFormsBlock {
+    // border-bottom: 1px solid #e8e8e8;
+    padding: 0 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 440px;
+    box-sizing: border-box;
+}
+
+.checkoutFormsList {
+    list-style-type: none;
+    padding: 65px 0 93px 0;
+    margin: 0;
+    .checkoutFormsList-header {
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 72px;
+    }
+    &-item {
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+.checkoutForms-container {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutFormsSection {
+    width: 50%;
+    margin: 0 0 0 35px;
+    // padding: 16px 0;
+    box-sizing: border-box;
+    .checkoutFormsSection-header {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &-text {
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkoutFormsSection-inputRadio {
+        display: none;
+    }
+    .checkoutFormsSection-label {
+        color: #222222;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 32px;
+        transition: color .3s;
+        &::before {
+            content: "";
+            margin-right: 14px;
+            transform: translateY(2px);
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url(img/dot-circle.svg) no-repeat;
+            background-size: cover;
+        }
+        &:hover {
+            color: @design-color;
+        }
+    }
+}
+
+.checkoutFormsSection-inputRadio:checked + .checkoutFormsSection-label::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(img/dot-circle-active.svg) no-repeat;
+    background-size: cover;
+}
+
+.checkoutFormsSectionList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    &-item::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f101";
+        margin-right: 4px;
+    }
+}
+
+.checkoutFormsSection-button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    line-height: 50px;
+    transition: color .3s, background-color .3s;
+    margin-top: 38px;
+    &:hover {
+        color: #fff;
+        background-color: @design-color;
+    }
+}
+
+.checkoutFormsSection-labelText {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.requiredMarker {
+    color: #ff0d0d;
+}
+
+.checkoutFormsSection-inputText {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0 15px;
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.checkoutFormsSection-inputSubmit {
+    display: none;
+}
+
+.checkoutFormsSectionButtonsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.forgotPasswordButton {
+    display: block;
+    text-decoration: none;
+    margin-top: 38px;
+    margin-left: 32px;
+    line-height: 51px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color .3s;
+    &:hover{
+        color: @design-color;
     }
 }
