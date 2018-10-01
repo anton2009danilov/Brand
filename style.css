@@ -2452,7 +2452,7 @@ li.feature-box_three::before {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 465px;
+  height: 440px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2481,7 +2481,7 @@ li.feature-box_three::before {
 }
 .checkoutFormsSection {
   width: 50%;
-  margin: 16px 0 16px 35px;
+  margin: 0 0 0 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2553,7 +2553,12 @@ li.feature-box_three::before {
 }
 .checkoutFormsSection-button {
   text-decoration: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #4a4a4a;
   font-family: Lato;
   font-size: 14px;
@@ -2562,7 +2567,6 @@ li.feature-box_three::before {
   width: 180px;
   height: 50px;
   border: 1px solid #eaeaea;
-  text-align: center;
   line-height: 50px;
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
