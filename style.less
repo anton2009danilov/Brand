@@ -2248,8 +2248,10 @@ li.feature-box_three::before {
 
 .checkoutFormsList {
     list-style-type: none;
-    padding: 65px 0 93px 0;
+    // padding: 65px 0 93px 0;
     margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+    
     .checkoutFormsList-header {
         color: #222222;
         font-size: 16px;
@@ -2257,9 +2259,9 @@ li.feature-box_three::before {
         text-transform: uppercase;
         margin: 0;
         line-height: 72px;
-    }
-    &-item {
-        border-bottom: 1px solid #e8e8e8;
+        &::-webkit-details-marker {
+            display: none;
+        }
     }
 }
 
