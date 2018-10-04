@@ -1535,6 +1535,9 @@ li.feature-box_three::before {
   margin-bottom: 20px;
 }
 .topFilter-inputText {
+  display: block;
+  padding: 0;
+  margin: 0;
   color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
@@ -1575,7 +1578,7 @@ li.feature-box_three::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.topFilter-checkBoxLabel input:checked + div:before {
+.topFilter-checkBoxLabel input:checked + span:before {
   background-color: #ebebeb;
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
