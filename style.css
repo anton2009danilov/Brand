@@ -1611,7 +1611,8 @@ li.feature-box_three::before {
   background-color: #f3f3f3;
 }
 .sortByBar-label {
-  padding: 9px 8px 9px 11px;
+  display: inline-block;
+  padding: 10px 8px 8px 11px;
   color: #6f6e6e;
   margin-left: 10px;
   font-size: 14px;
