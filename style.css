@@ -2180,14 +2180,16 @@ li.feature-box_three::before {
   display: flex;
   width: 300px;
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  transition: -webkit-box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 .orderTable-container .orderTable-itemCard:hover {
   -webkit-box-shadow: 2px 0 5px #ddd;
           box-shadow: 2px 0 5px #ddd;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .orderTable-container .orderTable-itemCard .itemCard-img {
   margin-right: 21px;
