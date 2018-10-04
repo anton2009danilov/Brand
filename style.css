@@ -1104,6 +1104,8 @@ li.feature-box_three::before {
   color: #f16d7f;
 }
 .browse-title {
+  margin: 0;
+  padding: 0;
   height: 40px;
   color: #232323;
   font-size: 14px;
