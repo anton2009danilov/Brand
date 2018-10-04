@@ -1164,8 +1164,8 @@ li.feature-box_three::before {
 .cart-productSection-link:hover {
   -webkit-box-shadow: 2px 0 5px #ddd;
           box-shadow: 2px 0 5px #ddd;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .cart-productName {
   color: #222222;
