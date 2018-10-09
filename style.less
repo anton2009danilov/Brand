@@ -6,6 +6,11 @@
 @background-color-hover: #fff - #011;
 @main-color: #222222;
 
+html,
+body {
+    height: 100%;
+}
+
 summary:focus {
     outline: 0;
 }
@@ -30,6 +35,17 @@ figure {
 
 .button-hover-effect {
     background-color: @design-color-hover;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
 }
 
 .header {
@@ -876,7 +892,6 @@ li.feature-box_three::before {
     width: 1140px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 
