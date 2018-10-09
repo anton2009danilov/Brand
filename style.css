@@ -24,6 +24,7 @@ figure {
   background-color: #e05c6e;
 }
 .wrapper {
+  min-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +41,7 @@ figure {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  overflow: hidden;
 }
 .header {
   font-family: 'Lato', sans-serif;
