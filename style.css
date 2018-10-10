@@ -2018,6 +2018,7 @@ li.feature-box_three::before {
   line-height: 55px;
   text-align: center;
   background-image: url(img/cart-pink.svg);
+  background-size: 26px 24px;
   background-repeat: no-repeat;
   background-position: 207px center;
   padding-left: 40px;
