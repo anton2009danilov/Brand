@@ -1868,7 +1868,7 @@ li.feature-box_three::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1167px;
-  height: 730px;
+  min-height: 730px;
   background-color: #ffffff;
   -webkit-transform: translateY(-86px);
           transform: translateY(-86px);
@@ -1888,7 +1888,7 @@ li.feature-box_three::before {
           align-items: center;
 }
 .productDescription .productDescription-container .productDescription-textBlock {
-  height: 330px;
+  min-height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1902,7 +1902,7 @@ li.feature-box_three::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 12px;
+  padding: 0 12px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid #eaeaea;
