@@ -588,7 +588,7 @@ figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 529px;
+  min-height: 529px;
   margin: 113px 0 97px 0;
   font-family: 'Lato', sans-serif;
 }
@@ -607,7 +607,7 @@ figure {
       -ms-flex-flow: column;
           flex-flow: column;
   width: 767px;
-  height: 529px;
+  min-height: 529px;
   background-image: url(img/feature-offer.jpg);
   background-size: cover;
   padding-left: 39px;
@@ -624,7 +624,7 @@ figure {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 370px;
-  height: 529px;
+  min-height: 529px;
   background-color: #222224;
   margin: 0;
   padding: 0;
@@ -645,7 +645,7 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 102px;
+  min-height: 102px;
   list-style-type: none;
 }
 .featureBlock-box {
@@ -960,7 +960,7 @@ li.feature-box_three::before {
   margin: 14px 0 35px 0;
 }
 .footer {
-  height: 458px;
+  min-height: 458px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
