@@ -902,6 +902,13 @@ li.feature-box_three::before {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
+.subscribe-formButton:focus {
+  outline: none;
+  background-color: #e05c6e;
+}
+.subscribe-formButton:active {
+  color: #ffa0b2;
+}
 .subscribe-formButton:hover {
   background-color: #e05c6e;
 }
@@ -919,6 +926,9 @@ li.feature-box_three::before {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
+}
+.subscribe-input:focus {
+  outline: none;
 }
 .subscribe-right {
   width: 50%;

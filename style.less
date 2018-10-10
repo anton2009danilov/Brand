@@ -838,6 +838,13 @@ li.feature-box_three::before {
     border: none;
     color: @background-color;
     transition: background-color .3s;
+    &:focus {
+        outline: none;
+        background-color: @design-color-hover;
+    }
+    &:active {
+        color: @design-color + #333;
+    }
 }
 
 .subscribe-formButton:hover {
@@ -857,6 +864,9 @@ li.feature-box_three::before {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
+    &:focus {
+        outline: none;
+    }
 }
 .subscribe-right {
     width: 50%;
