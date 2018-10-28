@@ -840,15 +840,18 @@ li.feature-box_three::before {
   margin: 0;
   padding: 0;
 }
-.subscribe-userCard::before {
-  content: "";
-  background: url(img/user-photo.png) no-repeat;
-  background-position: center center;
-  vertical-align: middle;
-  float: left;
+.subscribe-userPhoto {
   width: 83px;
   height: 83px;
-  background-size: 83px;
+  float: left;
+  -webkit-transition: -webkit-filter .5s;
+  transition: -webkit-filter .5s;
+  transition: filter .5s;
+  transition: filter .5s, -webkit-filter .5s;
+}
+.subscribe-userPhoto:hover {
+  -webkit-filter: brightness(1.08);
+          filter: brightness(1.08);
 }
 .subscribe-comment {
   width: 368px;

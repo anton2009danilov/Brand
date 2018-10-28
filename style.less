@@ -571,14 +571,14 @@ figure {
 }
 
 .feature-offerLink {
-     display: block;
-     height: 100%;
-     width: 100%;
-     text-decoration: none;
-     transition: filter .5s;
-     &:hover {
-       filter: brightness(1.15);
-     }
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  transition: filter .5s;
+  &:hover {
+    filter: brightness(1.15);
+  }
 }
 
 .feature-list {
@@ -771,16 +771,27 @@ li.feature-box_three::before {
   padding: 0;
 }
 
-.subscribe-userCard::before {
-  content: "";
-  background: url(img/user-photo.png) no-repeat;
-  background-position: center center;
-  vertical-align: middle;
-  float: left;
+.subscribe-userPhoto {
   width: 83px;
   height: 83px;
-  background-size: 83px;
+  //border-radius: 41.5px;
+  float: left;
+  transition: filter .5s;
+  &:hover {
+    filter: brightness(1.08);
+  }
 }
+
+//.subscribe-userCard::before {
+//  content: "";
+//  background: url(img/user-photo.png) no-repeat;
+//  background-position: center center;
+//  vertical-align: middle;
+//  float: left;
+//  width: 83px;
+//  height: 83px;
+//  background-size: 83px;
+//}
 
 .subscribe-comment {
   width: 368px;
