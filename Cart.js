@@ -60,7 +60,6 @@ class Cart {
   }
 
   _renderItem(product) {
-    console.log(product);
     let $section = $('<section/>', {
       class: 'cart-productSection',
       'data-product': product.id_product
