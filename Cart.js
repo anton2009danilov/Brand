@@ -13,30 +13,38 @@ class Cart {
     // let $cartItemsDiv = $('<div/>', {
     //   class: 'cart-items-wrap'
     // });
+    let $isEmpty = $('.cart-productSection')[0];
+    console.log($isEmpty);
+    if(!$('.cart-productSection')[0]){
+      let $cartProductSection = $('<section class="cart-productSection">В корзине нет товаров</section>');
+      $cartProductSection.appendTo($(this.container));
+    } else {
+      let $cartOrderTotal = $('<div class="cart-orderTotal"></div>');
+      let $totalName = $('<p>Total</p>');
+      let $totalPrice = $(`<p class="cart-totalPrice">&#36;${(this.amount).toFixed(2)}</p>`);
+      let $checkoutLink = $('<a href="checkout.html" class="cart-button">CHECKOUT</a>');
+      let $shoppingCartLink = $('<a href="shopping-cart.html" class="cart-button">Go&nbsp;to&nbsp;cart</a>');
 
-    let $cartProductSection = $('<section class="cart-productSection"></section>');
+
+      $cartOrderTotal.appendTo($(this.container));
+      $totalName.appendTo($cartOrderTotal);
+      $totalPrice.appendTo($cartOrderTotal);
+      $checkoutLink.appendTo($(this.container));
+      $shoppingCartLink.appendTo($(this.container));
+    }
+
 
     // let $totalProducts = $('<div/>', {
     //   class: 'cart-summary sum-amount'
     // });
 
-    let $cartOrderTotal = $('<div class="cart-orderTotal"></div>');
+
 
     // let $totalPrice = $('<div/>', {
     //   class: 'cart-orderTotal'
     // });
 
-    let $totalName = $('<p>Total</p>');
-    let $totalPrice = $('<p>&#36;0.00</p>')
-    let $checkoutLink = $('<a href="checkout.html" class="cart-button">CHECKOUT</a>');
-    let $shoppingCartLink = $('<a href="shopping-cart.html" class="cart-button">Go&nbsp;to&nbsp;cart</a>');
 
-    $cartProductSection.appendTo($(this.container));
-    $cartOrderTotal.appendTo($(this.container));
-    $totalName.appendTo($cartOrderTotal);
-    $totalPrice.appendTo($cartOrderTotal);
-    $checkoutLink.appendTo($(this.container));
-    $shoppingCartLink.appendTo($(this.container));
 
     // $(this.container).text('Корзина');
 
@@ -54,15 +62,15 @@ class Cart {
           this.cartItems.push(product);
           this._renderItem(product)
         }
-        this.countGoods = data.countGoods;
         this.amount = data.amount;
+        this.countGoods = data.countGoods;
         this._renderSum();
       })
   }
 
   _renderSum() {
     $('.sum-amount').text(`Всего товаров в корзине: ${this.countGoods}`);
-    $('.sum-price').text(`Общая сумма: ${this.amount} руб`);
+    $('.cart-totalPrice').text(`&#36;${this.amount}`);
   }
 
   _renderItem(product) {
