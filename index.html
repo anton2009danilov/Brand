@@ -70,52 +70,52 @@
                         <a href="shopping-cart.html" class="cart-icon">
                             <img class="cart-img" src="img/cart.svg" alt="cart">
                         </a>
-                        <div class="cart-dropdown">
-                            <section class="cart-productSection">
-                                <a class="cart-productSection-link" href="single-page.html">
-                                    <img src="img/cart-product-img1.jpg" alt="product-image">
-                                    <div class="cart-textBox">
-                                        <h3 class="cart-productName">REBOX ZANE</h3>
-                                        <div class="cart-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                        <p class="cart-ordered">1&nbsp;<span class="cart-ordered-x">x</span> $250</p>
-                                    </div>
-                                </a>
-                                <button class="cart-deleteButton">
-                                    <i class="fas fa-times-circle"></i>
-                                </button>
-                            </section>
-                            <section class="cart-productSection">
-                                <a class="cart-productSection-link" href="single-page.html">
-                                    <img src="img/cart-product-img2.jpg" alt="product-image">
-                                    <div class="cart-textBox">
-                                        <h3 class="cart-productName">REBOX ZANE</h3>
-                                        <div class="cart-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                        <p class="cart-ordered">1&nbsp;<span class="cart-ordered-x">x</span> $250</p>
+                        <div class="cart-dropdown" id="cart">
+                            <!--<section class="cart-productSection">-->
+                                <!--<a class="cart-productSection-link" href="single-page.html">-->
+                                    <!--<img src="img/cart-product-img1.jpg" alt="product-image">-->
+                                    <!--<div class="cart-textBox">-->
+                                        <!--<h3 class="cart-productName">REBOX ZANE</h3>-->
+                                        <!--<div class="cart-stars">-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star-half-alt"></i>-->
+                                        <!--</div>-->
+                                        <!--<p class="cart-ordered">1&nbsp;<span class="cart-ordered-x">x</span> $250</p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<button class="cart-deleteButton">-->
+                                    <!--<i class="fas fa-times-circle"></i>-->
+                                <!--</button>-->
+                            <!--</section>-->
+                            <!--<section class="cart-productSection">-->
+                                <!--<a class="cart-productSection-link" href="single-page.html">-->
+                                    <!--<img src="img/cart-product-img2.jpg" alt="product-image">-->
+                                    <!--<div class="cart-textBox">-->
+                                        <!--<h3 class="cart-productName">REBOX ZANE</h3>-->
+                                        <!--<div class="cart-stars">-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star"></i>-->
+                                            <!--<i class="fas fa-star-half-alt"></i>-->
+                                        <!--</div>-->
+                                        <!--<p class="cart-ordered">1&nbsp;<span class="cart-ordered-x">x</span> $250</p>-->
 
-                                    </div>
-                                </a>
-                                <button class="cart-deleteButton">
-                                    <i class="fas fa-times-circle"></i>
-                                </button>
-                            </section>
-                            <div class="cart-orderTotal">
-                                <p>TOTAL</p>
-                                <p>$500.00</p>
-                            </div>
-                            <a href="checkout.html" class="cart-button">CHECKOUT</a>
-                            <a href="shopping-cart.html" class="cart-button">Go&nbsp;to&nbsp;cart</a>
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<button class="cart-deleteButton">-->
+                                    <!--<i class="fas fa-times-circle"></i>-->
+                                <!--</button>-->
+                            <!--</section>-->
+                            <!--<div class="cart-orderTotal">-->
+                                <!--<p>TOTAL</p>-->
+                                <!--<p>$500.00</p>-->
+                            <!--</div>-->
+                            <!--<a href="checkout.html" class="cart-button">CHECKOUT</a>-->
+                            <!--<a href="shopping-cart.html" class="cart-button">Go&nbsp;to&nbsp;cart</a>-->
                         </div>
                     </div>
                     <a href="#" class="button account-button">My&nbsp;Account <i
@@ -880,5 +880,15 @@
         </div>
     </div>
 </div>
+<script src="jquery-3.3.1.js"></script>
+<script src="Cart.js"></script>
+<script>
+    $(document).ready(() => {
+
+
+      let cart = new Cart('getCart.json');
+    });
+
+</script>
 </body>
 </html>
