@@ -50,13 +50,13 @@ class Cart {
       .catch(error => {
         console.log(error);
         let $cartProductSection = $('<section class="cart-productSection">В корзине нет товаров</section>');
-          $cartProductSection.appendTo($('.cart-sectionsWrapper'));
+        $cartProductSection.appendTo($('.cart-sectionsWrapper'));
       })
   }
 
   _renderSum() {
     // $('.sum-amount').text(`Всего товаров в корзине: ${this.countGoods}`);
-    $('.cart-totalPrice').text(`$${(this.amount).toFixed(2)}`);
+    $('.cart-totalPrice').text(`$${Math.abs((this.amount).toFixed(2))}`);
   }
 
   _renderItem(product) {
@@ -70,7 +70,13 @@ class Cart {
     let $textBox = $('<div class="cart-textBox"></div>');
     let $productName = $(`<h3 class="cart-productName">${product.product_name}</h3>`);
     let $stars = $(`<div class="cart-stars"></div>`);
+    let $productQuantityAndPrice = $(
+      `<p class="cart-ordered">
+    <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
+     $<span class="cart-productPrice">${product.price}</span></p>`
+    );
     let $sectionsWrapper = $('.cart-sectionsWrapper');
+    let $delBtn = $(`<button class="cart-deleteButton"><i class="fas fa-times-circle"></i></button>`)
 
     $section.appendTo($sectionsWrapper);
     $section.append($productLink);
@@ -78,7 +84,12 @@ class Cart {
     $productLink.append($textBox);
     $textBox.append($productName);
     $textBox.append($stars);
+    $textBox.append($productQuantityAndPrice);
+    $section.append($delBtn);
 
+    $delBtn.click(() => {
+      this._remove(product.id_product);
+    });
 
     for (let i = 1; i <= product["full_star"]; i++) {
       let $fullStar = $('<i class="fas fa-star">');
@@ -89,24 +100,13 @@ class Cart {
       let $halfStar = $('<i class="fas fa-star-half-alt">');
       $halfStar.appendTo($stars);
     }
+  }
 
-
-    // $container.append($(`<p class="product-name">${product.product_name}</p>`));
-    // $container.append($(`<p class="product-quantity">${product.quantity}</p>`));
-    // $container.append($(`<p class="product-price">${product.price} руб.</p>`));
-    // let $delBtn = $('<button class="delBtn">&times;</button>');
-    // $container.append($delBtn);
-    // $delBtn.click(() => {
-    //   this._remove(product.id_product);
-    // });
-    // $container.appendTo($('.cart-items-wrap'));
-  };
-
-  // _updateCart(product) {
-  //   let $container = $(`div[data-product="${product.id_product}"]`);
-  //   $container.find('.product-quantity').text(product.quantity);
-  //   $container.find('.product-price').text(`${product.quantity * product.price} руб`);
-  // }
+  _updateCart(product) {
+    let $container = $(`section[data-product="${product.id_product}"]`);
+    $container.find('.cart-productQuantity').text(product.quantity);
+    $container.find('.cart-productQuantityPrice').text(`${product.quantity * product.price} руб`);
+  }
 
 
 //   addProduct(element) {
@@ -132,19 +132,18 @@ class Cart {
 //     this._renderSum();
 //   }
 //
-//   _remove(idProduct) {
-//     // TODO: удаление товара из корзины
-//     let find = this.cartItems.find(product => product.id_product === idProduct);
-//     if (find.quantity > 1) {
-//       find.quantity--;
-//       this._updateCart(find)
-//     } else {
-//       this.cartItems.splice(this.cartItems.indexOf(find), 1);
-//       $(`div[data-product="${idProduct}"]`).remove();
-//     }
-//     this.countGoods--;
-//     this.amount -= find.price;
-//     this._renderSum();
-//   }
+  _remove(idProduct) {
+    let find = this.cartItems.find(product => product.id_product === idProduct);
+    if (find.quantity > 1) {
+      find.quantity--;
+      this._updateCart(find)
+    } else {
+      this.cartItems.splice(this.cartItems.indexOf(find), 1);
+      $(`section[data-product="${idProduct}"]`).remove();
+    }
+    this.countGoods--;
+    this.amount -= find.price;
+    this._renderSum();
+  }
 
 }
