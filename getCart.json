@@ -10,8 +10,7 @@
       "href": "single-page.html",
       "src": "img/cart-product-img1.jpg",
       "full_star": 4,
-      "half_star": 1,
-      "empty_star": 0
+      "half_star": 1
     },
     {
       "id_product": 102,
@@ -21,8 +20,7 @@
       "href": "single-page.html",
       "src": "img/cart-product-img2.jpg",
       "full_star": 3,
-      "half_star": 0,
-      "empty_star": 2
+      "half_star": 0
     }
   ]
 }
