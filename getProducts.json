@@ -2,7 +2,7 @@
   "contents": [
     {
       "id_product": 201,
-      "product_name": "Mango People T-shirt (type1)",
+      "product_name": "Mango People T-shirt (№1)",
       "price": 51,
       "quantity": 1,
       "href": "single-page.html",
@@ -12,7 +12,7 @@
     },
     {
       "id_product": 202,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№2)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -22,7 +22,7 @@
     },
     {
       "id_product": 203,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№3)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -32,7 +32,7 @@
     },
     {
       "id_product": 204,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№4)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -42,7 +42,7 @@
     },
     {
       "id_product": 205,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№5)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -52,7 +52,7 @@
     },
     {
       "id_product": 206,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№6)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -62,7 +62,7 @@
     },
     {
       "id_product": 207,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№7)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
@@ -72,7 +72,7 @@
     },
     {
       "id_product": 208,
-      "product_name": "Mango People T-shirt (type2)",
+      "product_name": "Mango People T-shirt (№8)",
       "price": 52,
       "quantity": 1,
       "href": "single-page.html",
