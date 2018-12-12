@@ -100,7 +100,19 @@ class Cart {
       let $halfStar = $('<i class="fas fa-star-half-alt">');
       $halfStar.appendTo($stars);
     }
+
+    // for (let i = 1; i <= product["empty_star"]; i++) {
+    //   let $fullStar = $('<i class="far fa-star">');
+    //   $fullStar.appendTo($stars);
+    // }
+    if (product["full_star"] < 5 && !product["half_star"]) {
+      for (let i = 0; i < 5 - product["full_star"]; i++) {
+        let $emptyStar = $('<i class="far fa-star">');
+        $emptyStar.appendTo($stars);
+      }
+    }
   }
+
 
   _updateCart(product) {
     let $container = $(`section[data-product="${product.id_product}"]`);
