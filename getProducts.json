@@ -1,0 +1,84 @@
+{
+  "contents": [
+    {
+      "id_product": 201,
+      "product_name": "Mango People T-shirt (type1)",
+      "price": 51,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card1-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 202,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card2-img.jpg",
+      "full_star": 4,
+      "half_star": 1
+    },
+    {
+      "id_product": 203,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card3-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 204,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card4-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 205,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card5-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 206,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card6-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 207,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card7-img.jpg",
+      "full_star": 4,
+      "half_star": 0
+    },
+    {
+      "id_product": 208,
+      "product_name": "Mango People T-shirt (type2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/card8-img.jpg",
+      "full_star": 5,
+      "half_star": 0
+    }
+  ]
+}
