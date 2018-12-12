@@ -10,14 +10,14 @@ class ProductList {
   _renderItem(product){
     let $wrapper = $('<li/>', {
       class: 'product-list_item',
-      id: `product${this.id}`
+      id: `product${product.id_product}`
     });
 
     let $productFigure = $('<figure class="product-figure"></figure>');
     let $productCard = $('<a href="single-page.html" class="product-card"></a>');
     let $productImg = $(`<img src="${product.src}" alt="card${product.id_product}-img" class="product-img">`);
     let $productTextBox = $('<div class="product-text-box">');
-    let $productName = $(`<h3 class="product-name">${product.title}</h3>`);
+    let $productName = $(`<h3 class="product-name">${product.product_name}</h3>`);
     let $productPrice = $(`<h3 class="product-price design-color">$${(product.price).toFixed(2)}</h3>`);
     let $stars = $('<div class="product-stars"></div>');
 
@@ -50,7 +50,7 @@ class ProductList {
       class: 'addToCart-button',
       text: 'Add to Cart',
       href: '#',
-      'data-id': product.id,
+      'data-id': product.id_product,
       'data-price': product.price,
       'data-title': product.title
     });
