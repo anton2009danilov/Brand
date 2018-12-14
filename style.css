@@ -2163,7 +2163,8 @@ li.feature-box_three::before {
   margin-bottom: 72px;
 }
 .cartProduct-img-png {
-  margin: 0 19px;
+  padding: 0 19px;
+  background-color: #e9e9e9;
 }
 .orderTable {
   display: -webkit-box;

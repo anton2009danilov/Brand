@@ -66,7 +66,7 @@ class Cart {
     });
 
     let $productLink = $(`<a class="cart-productSection-link" href="${product.href}"></a>`);
-    let $productImg = $(`<img src="${product.src}" alt="product${product.id}-image" class="cart-productSectionImg">`);
+    let $productImg = $(`<img src="${product.src}" alt="product${product.id_product}-image" class="cart-productSectionImg">`);
     let $textBox = $('<div class="cart-textBox"></div>');
     let $productName = $(`<h3 class="cart-productName">${product.product_name}</h3>`);
     let $stars = $(`<div class="cart-stars"></div>`);
@@ -121,7 +121,7 @@ class Cart {
     });
 
     let $productLink = $(`<a class="cart-productSection-link" href="${product.href}"></a>`);
-    let $productImg = $(`<img src="${product.special_src}" class="cart-productSectionImg ${product.special_class_for_cart}">`);
+    let $productImg = $(`<img src="${product.special_src}" alt="product${product.id_product}-image" class="cart-productSectionImg ${product.special_class_for_cart}">`);
     // let $productImg = $(`<div class="cart-productSectionImg ${product.special_class}"></div>`);
     let $textBox = $('<div class="cart-textBox"></div>');
     let $productName = $(`<h3 class="cart-productName">${product.product_name}</h3>`);
