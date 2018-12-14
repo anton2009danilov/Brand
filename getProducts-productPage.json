@@ -1,0 +1,94 @@
+{
+  "contents": [
+    {
+      "id_product": 201,
+      "product_name": "Mango People T-shirt (№1)",
+      "price": 51,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct1.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 202,
+      "product_name": "Mango People T-shirt (№2)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct2.jpg",
+      "full_star": 4,
+      "half_star": 1
+    },
+    {
+      "id_product": 203,
+      "product_name": "Mango People T-shirt (№3)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct3.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 204,
+      "product_name": "Mango People T-shirt (№4)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct4.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 205,
+      "product_name": "Mango People T-shirt (№5)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct5.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 206,
+      "product_name": "Mango People T-shirt (№6)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct6.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 207,
+      "product_name": "Mango People T-shirt (№7)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct7.jpg",
+      "full_star": 4,
+      "half_star": 0
+    },
+    {
+      "id_product": 208,
+      "product_name": "Mango People T-shirt (№8)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct8.jpg",
+      "full_star": 5,
+      "half_star": 0
+    },
+    {
+      "id_product": 209,
+      "product_name": "Mango People T-shirt (№8)",
+      "price": 52,
+      "quantity": 1,
+      "href": "single-page.html",
+      "src": "img/sortedProduct9.jpg",
+      "full_star": 5,
+      "half_star": 0
+    }
+  ]
+}
