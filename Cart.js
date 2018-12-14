@@ -114,6 +114,62 @@ class Cart {
   }
 
 
+  _renderSpecialItem(product) {
+    let $section = $('<section/>', {
+      class: 'cart-productSection',
+      'data-product': product.id_product
+    });
+
+    let $productLink = $(`<a class="cart-productSection-link" href="${product.href}"></a>`);
+    let $productImg = $(`<img src="${product.special_src}" class="cart-productSectionImg ${product.special_class_for_cart}">`);
+    // let $productImg = $(`<div class="cart-productSectionImg ${product.special_class}"></div>`);
+    let $textBox = $('<div class="cart-textBox"></div>');
+    let $productName = $(`<h3 class="cart-productName">${product.product_name}</h3>`);
+    let $stars = $(`<div class="cart-stars"></div>`);
+    let $productQuantityAndPrice = $(
+      `<p class="cart-ordered">
+    <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
+     $<span class="cart-productPrice">${product.price}</span></p>`
+    );
+    let $sectionsWrapper = $('.cart-sectionsWrapper');
+    let $delBtn = $(`<button class="cart-deleteButton"><i class="fas fa-times-circle"></i></button>`)
+
+    $section.appendTo($sectionsWrapper);
+    $section.append($productLink);
+    $productLink.append($productImg);
+    $productLink.append($textBox);
+    $textBox.append($productName);
+    $textBox.append($stars);
+    $textBox.append($productQuantityAndPrice);
+    $section.append($delBtn);
+
+    $delBtn.click(() => {
+      this._remove(product.id_product);
+    });
+
+    for (let i = 1; i <= product["full_star"]; i++) {
+      let $fullStar = $('<i class="fas fa-star">');
+      $fullStar.appendTo($stars);
+    }
+
+    if (product["half_star"]) {
+      let $halfStar = $('<i class="fas fa-star-half-alt">');
+      $halfStar.appendTo($stars);
+    }
+
+    // for (let i = 1; i <= product["empty_star"]; i++) {
+    //   let $fullStar = $('<i class="far fa-star">');
+    //   $fullStar.appendTo($stars);
+    // }
+    if (product["full_star"] < 5 && !product["half_star"]) {
+      for (let i = 0; i < 5 - product["full_star"]; i++) {
+        let $emptyStar = $('<i class="far fa-star">');
+        $emptyStar.appendTo($stars);
+      }
+    }
+  }
+
+
   _updateCart(product) {
     let $container = $(`section[data-product="${product.id_product}"]`);
     $container.find('.cart-productQuantity').text(product.quantity);
@@ -134,6 +190,10 @@ class Cart {
         id_product: productId,
         price: +$(element).data('price'),
         product_name: $(element).data('name'),
+        special_class: $(element).data('special_class'),
+        special_src: $(element).data('special_src'),
+        special_class_for_cart: $(element).data('special_class_for_cart'),
+        href: $(element).data('href'),
         src: $(element).data('src'),
         full_star: $(element).data('full_star'),
         half_star: $(element).data('half_star'),
@@ -143,7 +203,12 @@ class Cart {
       this.cartItems.push(product);
       this.countGoods++;
       this.amount += product.price;
-      this._renderItem(product);
+      // this._renderSpecialItem(product);
+      if (!(product.src === undefined)) {
+        this._renderItem(product);
+      } else {
+        this._renderSpecialItem(product);
+      }
     }
     this._renderSum();
   }

@@ -897,7 +897,7 @@
   $(document).ready(() => {
 
     let cart = new Cart('getCart.json');
-    let productList1 = new ProductList('getProducts-productPage.json');
+    let productList = new ProductList('getProducts-productPage.json');
 
     $('.product-list').on( "click", function( event ) {
       if(event.target.classList[0] === 'addToCart-button') {
