@@ -1250,6 +1250,10 @@ li.feature-box_three::before {
           align-items: center;
   padding: 16px 0;
 }
+.cart-productSectionImg {
+  max-width: 72px;
+  height: 85px;
+}
 .cart-productSection:not(:last-of-type) {
   border-bottom: 1px solid #ededed;
 }

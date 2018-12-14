@@ -51,8 +51,12 @@ class ProductList {
       text: 'Add to Cart',
       href: '#',
       'data-id': product.id_product,
+      'data-name': product.product_name,
+      'data-href': product.href,
       'data-price': product.price,
-      'data-title': product.title
+      'data-src': product.src,
+      'data-full_star': product.full_star,
+      'data-half_star': product.half_star,
     });
 
     // $buyBtn.click()

@@ -66,7 +66,7 @@ class Cart {
     });
 
     let $productLink = $(`<a class="cart-productSection-link" href="${product.href}"></a>`);
-    let $productImg = $(`<img src="${product.src}" alt="product${product.id}-image">`);
+    let $productImg = $(`<img src="${product.src}" alt="product${product.id}-image" class="cart-productSectionImg">`);
     let $textBox = $('<div class="cart-textBox"></div>');
     let $productName = $(`<h3 class="cart-productName">${product.product_name}</h3>`);
     let $stars = $(`<div class="cart-stars"></div>`);
@@ -121,29 +121,33 @@ class Cart {
   }
 
 
-//   addProduct(element) {
-//     let productId = +$(element).data('id');
-//     let find = this.cartItems.find(product => product.id_product === productId);
-//     if (find) {
-//       find.quantity++;
-//       this.countGoods++;
-//       this.amount += find.price;
-//       this._updateCart(find);
-//     } else {
-//       let product = {
-//         id_product: productId,
-//         price: +$(element).data('price'),
-//         product_name: $(element).data('title'),
-//         quantity: 1
-//       };
-//       this.cartItems.push(product);
-//       this.countGoods++;
-//       this.amount += product.price;
-//       this._renderItem(product);
-//     }
-//     this._renderSum();
-//   }
-//
+  addProduct(element) {
+    let productId = +$(element).data('id');
+    let find = this.cartItems.find(product => product.id_product === productId);
+    if (find) {
+      find.quantity++;
+      this.countGoods++;
+      this.amount += find.price;
+      this._updateCart(find);
+    } else {
+      let product = {
+        id_product: productId,
+        price: +$(element).data('price'),
+        product_name: $(element).data('name'),
+        src: $(element).data('src'),
+        full_star: $(element).data('full_star'),
+        half_star: $(element).data('half_star'),
+        quantity: 1
+      };
+
+      this.cartItems.push(product);
+      this.countGoods++;
+      this.amount += product.price;
+      this._renderItem(product);
+    }
+    this._renderSum();
+  }
+
   _remove(idProduct) {
     let find = this.cartItems.find(product => product.id_product === idProduct);
     if (find.quantity > 1) {
