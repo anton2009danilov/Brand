@@ -11,10 +11,6 @@ class Cart {
   }
 
   _render() {
-    // if (!$('.cart-productSection')[0]) {
-    //   let $cartProductSection = $('<section class="cart-productSection">В корзине нет товаров</section>');
-    //   $cartProductSection.appendTo($(this.container));
-    // }
 
     let $sectionsWrapper = $('<div class="cart-sectionsWrapper"></div>');
     let $cartOrderTotal = $('<div class="cart-orderTotal"></div>');
