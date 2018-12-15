@@ -41,6 +41,7 @@ class OrderTable {
 
   _renderForm() {
     let $formsWrapper = $('<div class="orderForms-container"></div>');
+
     let $sectionOne = $('<section class="orderForms-section"></section>');
     let $sectionOne_header = $('<header class="orderForms-sectionHeader">SHIPPING ADDRESS</header>');
     let $sectionOne_form = $('<form action="#" class="orderForms-addressForm"></form>');
@@ -48,18 +49,22 @@ class OrderTable {
     let $sectionOne_selectOption1 = $('<option value="Bangladesh">Bangladesh</option>');
     let $sectionOne_selectOption2 = $('<option value="USA">USA</option>');
     let $sectionOne_selectOption3 = $('<option value="France">France</option>');
-    let $sectionOne_input = $(`<input class="orderForms-addressFormInput" id="state" list="dl_states" 
+    let $sectionOne_input1 = $(`<input class="orderForms-addressFormInput" id="state" list="dl_states" 
         placeholder="State">`);
-    let $sectionOne_datalist = $('<datalist id="dl_postcodes"></datalist>');
-    let $sectionOne_datalistOption1 = $('<option label="197124" value="197124"></option>');
-    let $sectionOne_datalistOption2 = $('<option label="165727" value="165727"></option>');
-    let $sectionOne_datalistOption3 = $('<option label="348796" value="348796"></option>');
-    let $sectionOne_datalistOption4 = $('<option label="722157" value="722157"></option>');
-
+    let $sectionOne_datalist1 = $('<datalist id="dl_states"></datalist>');
+    let $sectionOne_datalist1Option1 = $('<option label="Paris" value="Paris"></option>');
+    let $sectionOne_datalist1Option2 = $('<option label="Pekin" value="Pekin"></option>');
+    let $sectionOne_datalist1Option3 = $('<option label="Moscow" value="Moscow"></option>');
+    let $sectionOne_datalist1Option4 = $('<option label="Tokio" value="Tokio"></option>');
+    let $sectionOne_datalist1Option5 = $('<option label="New-york" value="New-york"></option>');
+    let $sectionOne_input2 = $(`<input class="orderForms-addressFormInput" id="state" list="dl_postcodes" 
+        placeholder="State">`);
+    let $sectionOne_datalist2 = $('<datalist id="dl_postcodes"></datalist>');
+    let $sectionOne_datalist2Option1 = $('<option label="197124" value="197124"></option>');
+    let $sectionOne_datalist2Option2 = $('<option label="165727" value="165727"></option>');
+    let $sectionOne_datalist2Option3 = $('<option label="348796" value="348796"></option>');
+    let $sectionOne_datalist2Option4 = $('<option label="722157" value="722157"></option>');
     let $sectionOne_btn = $('<a href="#" class="orderForms-formButton">get a quote</form>');
-
-    let $sectionTwo = $('<section class="orderForms-section"></section>');
-    let $sectionThree = $('<section class="orderForms-section"></section>');
 
     $formsWrapper.appendTo($(this.formsContainer));
     $sectionOne.appendTo($formsWrapper);
@@ -69,6 +74,27 @@ class OrderTable {
     $sectionOne_selectOption1.appendTo($sectionOne_select);
     $sectionOne_selectOption2.appendTo($sectionOne_select);
     $sectionOne_selectOption3.appendTo($sectionOne_select);
+    $sectionOne_input1.appendTo($sectionOne_form);
+    $sectionOne_datalist1.appendTo($sectionOne_form);
+    $sectionOne_datalist1Option1.appendTo($sectionOne_datalist1);
+    $sectionOne_datalist1Option2.appendTo($sectionOne_datalist1);
+    $sectionOne_datalist1Option3.appendTo($sectionOne_datalist1);
+    $sectionOne_datalist1Option4.appendTo($sectionOne_datalist1);
+    $sectionOne_datalist1Option5.appendTo($sectionOne_datalist1);
+    $sectionOne_input2.appendTo($sectionOne_form);
+    $sectionOne_datalist2.appendTo($sectionOne_form);
+    $sectionOne_datalist2Option1.appendTo($sectionOne_datalist2);
+    $sectionOne_datalist2Option2.appendTo($sectionOne_datalist2);
+    $sectionOne_datalist2Option3.appendTo($sectionOne_datalist2);
+    $sectionOne_datalist2Option4.appendTo($sectionOne_datalist2);
+    $sectionOne_btn.appendTo($sectionOne_form);
+
+    let $sectionTwo = $('<section class="orderForms-section"></section>');
+    
+
+    let $sectionThree = $('<section class="orderForms-section"></section>');
+
+
 
     // $tableHeader.appendTo($tableWrapper);
     // $tableHeaderColumnOne.appendTo($tableHeader);
