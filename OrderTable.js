@@ -161,21 +161,26 @@ class OrderTable {
       }
     }
 
-    let $color = $(`<p class="itemCard-text">color: ${product.color}</p>`);
+    let $color = $(`<p class="itemCard-text">Color: ${product.color}</p>`);
+    let $size = $(`<p class="itemCard-text">Size: ${product.size}</p>`);
 
-    let $column2 = $('<div class="orderTable-column"></div>');
+
+    let $column2 = $(`<div class="orderTable-column">$${product.price}</div>`);
     let $column3 = $('<div class="orderTable-column"></div>');
+    let itemQuantityForm = $(`<form action="#" class="orderTable-form"></form>`);
+    let itemQuantityInput = $(`<input class="orderTable-quantity" type="number" name="orderCount"
+    value="${product.quantity}" min="1" max="100" step="1">`);
+
     let $column4 = $('<div class="orderTable-column"></div>');
     let $column5 = $('<div class="orderTable-column"></div>');
     let $column6 = $('<div class="orderTable-lastColumn"></div>');
 
+    // let $productQuantityAndPrice = $(
+    //   `<p class="cart-ordered">
+    // <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
+    //  $<span class="cart-productPrice">${product.price}</span></p>`
+    // );
 
-
-    let $productQuantityAndPrice = $(
-      `<p class="cart-ordered">
-    <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
-     $<span class="cart-productPrice">${product.price}</span></p>`
-    );
     let $delBtn = $(`<button class="cart-deleteButton"><i class="fas fa-times-circle"></i></button>`)
 
     $tableRow.appendTo($container);
@@ -185,6 +190,13 @@ class OrderTable {
     $productLink.append($textBox);
     $textBox.append($productName);
     $textBox.append($stars);
+    $textBox.append($color);
+    $textBox.append($size);
+    $tableRow.append($column2);
+    $tableRow.append($column3);
+    $column3.append(itemQuantityForm);
+    $column3.append(itemQuantityInput);
+
 
 
     // $textBox.append($productQuantityAndPrice);

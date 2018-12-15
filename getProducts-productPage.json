@@ -8,7 +8,10 @@
       "href": "single-page.html",
       "src": "img/sortedProduct1.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
+
     },
     {
       "id_product": 302,
@@ -18,7 +21,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct2.jpg",
       "full_star": 4,
-      "half_star": 1
+      "half_star": 1,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 303,
@@ -28,7 +33,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct3.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 304,
@@ -38,7 +45,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct4.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 305,
@@ -48,7 +57,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct5.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 306,
@@ -58,7 +69,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct6.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 307,
@@ -68,7 +81,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct7.jpg",
       "full_star": 4,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 308,
@@ -78,7 +93,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct8.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     },
     {
       "id_product": 309,
@@ -88,7 +105,9 @@
       "href": "single-page.html",
       "src": "img/sortedProduct9.jpg",
       "full_star": 5,
-      "half_star": 0
+      "half_star": 0,
+      "color": "Red",
+      "size": "Xll"
     }
   ]
 }
