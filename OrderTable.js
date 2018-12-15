@@ -4,6 +4,7 @@ class OrderTable {
     this.tableContainer = tableContainer;
     this.formsContainer = formsContainer;
     this.countGoods = 0; // Общее кол-во товаров в корзине
+    this.subtotalSum = 0;
     this.amount = 0; // Общая стоимость товаров в корзине
     this.cartItems = []; // Массив со всеми товарами
     this._init(this.source);
@@ -22,7 +23,7 @@ class OrderTable {
 
     let $tableButtons = $('<div class="orderTable-buttonsBlock"></div>');
     let $clearBtn = $('<a href="#" class="orderTable-standAloneButton">CLEAR SHOPPING CART</a>');
-    let $continueBtn = $('<a href="#" class="orderTable-standAloneButton">CONTINUE SHOPPING</a>');
+    let $continueBtn = $('<a href="product.html" class="orderTable-standAloneButton">CONTINUE SHOPPING</a>');
 
 
     $tableWrapper.appendTo($(this.tableContainer));
@@ -64,7 +65,7 @@ class OrderTable {
     let $sectionOne_datalist2Option2 = $('<option label="165727" value="165727"></option>');
     let $sectionOne_datalist2Option3 = $('<option label="348796" value="348796"></option>');
     let $sectionOne_datalist2Option4 = $('<option label="722157" value="722157"></option>');
-    let $sectionOne_btn = $('<a href="#" class="orderForms-formButton">get a quote</form>');
+    let $sectionOne_btn = $('<a href="#" class="orderForms-formButton">get a quote</a>');
 
     $formsWrapper.appendTo($(this.formsContainer));
     $sectionOne.appendTo($formsWrapper);
@@ -90,23 +91,40 @@ class OrderTable {
     $sectionOne_btn.appendTo($sectionOne_form);
 
     let $sectionTwo = $('<section class="orderForms-section"></section>');
-    
+    let $sectionTwo_header = $('<header class="orderForms-sectionHeader">Coupon Discount</header>');
+    let $sectionTwo_paragraph = $('<p class="orderForms-text">Enter your coupon code if you have one</p>');
+    let $sectionTwo_form = $('<form action="#" class="orderForms-discountForm"></form>');
+    let $sectionTwo_input = $(`<input class="orderForms-discountFormInput" type="text" placeholder="Coupon Code">`);
+    let $sectionTwo_btn = $('<a href="#" class="orderForms-formButton">Apply coupon</a>');
 
-    let $sectionThree = $('<section class="orderForms-section"></section>');
+    $sectionTwo.appendTo($formsWrapper);
+    $sectionTwo_header.appendTo($sectionTwo);
+    $sectionTwo_paragraph.appendTo($sectionTwo);
+    $sectionTwo_form.appendTo($sectionTwo);
+    $sectionTwo_input.appendTo($sectionTwo_form);
+    $sectionTwo_btn.appendTo($sectionTwo_form);
 
 
+    let $sectionThree = $('<section class="orderForms-section orderForms-proceedToCheck"></section>');
+    let $sectionThree_paragraph = $(`<p class="orderForms-proceedToCheck-text">
+            Sub total
+            <span class="orderForms-proceedToCheck-markedText" id="totalSum">$${this.subtotalSum}</span> 
+        </p>`);
+    // let $subtotalSum = (`$<span class="orderForms-markedText" id="totalSum">$${this.subtotalSum}</span>`);
+    let $sectionThree_header = $(`<header class="orderForms-sectionHeader orderForms-CheckOutHeader">
+            Grand Total
+            <span class="orderForms-markedText" id="totalSum">$${this.amount}</span>
+        </header>`);
+    // let $totalSum = (`$<span class="orderForms-markedText" id="totalSum">$${this.amount}</span>`);
+    let $sectionThree_btn = $('<a href="checkout.html" class="orderForms-checkOutButton">Proceed to Checkout</a>');
 
-    // $tableHeader.appendTo($tableWrapper);
-    // $tableHeaderColumnOne.appendTo($tableHeader);
-    // $tableHeaderColumnTwo.appendTo($tableHeader);
-    // $tableHeaderColumnThree.appendTo($tableHeader);
-    // $tableHeaderColumnFour.appendTo($tableHeader);
-    // $tableHeaderColumnFive.appendTo($tableHeader);
-    // $tableHeaderColumnSix.appendTo($tableHeader);
-    // $tableItemsWrapper.appendTo($tableWrapper);
-    // $tableButtons.appendTo($tableWrapper);
-    // $clearBtn.appendTo($tableButtons);
-    // $continueBtn.appendTo($tableButtons);
+    $sectionThree.appendTo($formsWrapper);
+    $sectionThree_paragraph.appendTo($sectionThree);
+    // $subtotalSum.appendTo($sectionThree_paragraph);
+    $sectionThree_header.appendTo($sectionThree);
+    // $totalSum.appendTo($sectionThree_header);
+    $sectionThree_btn.appendTo($sectionThree);
+
   }
 
   _init(source) {
