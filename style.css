@@ -2310,7 +2310,7 @@ li.feature-box_three::before {
 .orderTable-container .orderTable-quantity {
   width: 54px;
   height: 30px;
-  padding-left: 24px;
+  padding-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #eaeaea;
