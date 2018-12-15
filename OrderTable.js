@@ -1,14 +1,15 @@
 class OrderTable {
-  constructor(source, container = '#orderTable') {
+  constructor(source, tableContainer = '#orderTable', formsContainer ='#orderForms') {
     this.source = source;
-    this.container = container;
+    this.tableContainer = tableContainer;
+    this.formsContainer = formsContainer;
     this.countGoods = 0; // Общее кол-во товаров в корзине
     this.amount = 0; // Общая стоимость товаров в корзине
     this.cartItems = []; // Массив со всеми товарами
     this._init(this.source);
   }
 
-  _render() {
+  _renderTable() {
     let $tableWrapper = $('<div class="orderTable-container"></div>');
     let $tableHeader = $('<div class="orderTable-headerRow"></div>');
     let $tableHeaderColumnOne = $('<div class="orderTable-columnOne">Product Details</div>');
@@ -17,7 +18,6 @@ class OrderTable {
     let $tableHeaderColumnFour = $('<div class="orderTable-headerColumn">Shipping</div>');
     let $tableHeaderColumnFive = $('<div class="orderTable-headerColumn">Subtotal</div>');
     let $tableHeaderColumnSix = $('<div class="orderTable-headerLastColumn">Action</div>');
-
     let $tableItemsWrapper = $('<div class="orderTable-itemsWrapper"></div>');
 
     let $tableButtons = $('<div class="orderTable-buttonsBlock"></div>');
@@ -25,7 +25,7 @@ class OrderTable {
     let $continueBtn = $('<a href="#" class="orderTable-standAloneButton">CONTINUE SHOPPING</a>');
 
 
-    $tableWrapper.appendTo($(this.container));
+    $tableWrapper.appendTo($(this.tableContainer));
     $tableHeader.appendTo($tableWrapper);
     $tableHeaderColumnOne.appendTo($tableHeader);
     $tableHeaderColumnTwo.appendTo($tableHeader);
@@ -39,8 +39,53 @@ class OrderTable {
     $continueBtn.appendTo($tableButtons);
   }
 
+  _renderForm() {
+    let $formsWrapper = $('<div class="orderForms-container"></div>');
+    let $sectionOne = $('<section class="orderForms-section"></section>');
+    let $sectionOne_header = $('<header class="orderForms-sectionHeader">SHIPPING ADDRESS</header>');
+    let $sectionOne_form = $('<form action="#" class="orderForms-addressForm"></form>');
+    let $sectionOne_select =$('<select class="orderForms-addressFormSelect" name="country" id="countryName"></select>');
+    let $sectionOne_selectOption1 = $('<option value="Bangladesh">Bangladesh</option>');
+    let $sectionOne_selectOption2 = $('<option value="USA">USA</option>');
+    let $sectionOne_selectOption3 = $('<option value="France">France</option>');
+    let $sectionOne_input = $(`<input class="orderForms-addressFormInput" id="state" list="dl_states" 
+        placeholder="State">`);
+    let $sectionOne_datalist = $('<datalist id="dl_postcodes"></datalist>');
+    let $sectionOne_datalistOption1 = $('<option label="197124" value="197124"></option>');
+    let $sectionOne_datalistOption2 = $('<option label="165727" value="165727"></option>');
+    let $sectionOne_datalistOption3 = $('<option label="348796" value="348796"></option>');
+    let $sectionOne_datalistOption4 = $('<option label="722157" value="722157"></option>');
+
+    let $sectionOne_btn = $('<a href="#" class="orderForms-formButton">get a quote</form>');
+
+    let $sectionTwo = $('<section class="orderForms-section"></section>');
+    let $sectionThree = $('<section class="orderForms-section"></section>');
+
+    $formsWrapper.appendTo($(this.formsContainer));
+    $sectionOne.appendTo($formsWrapper);
+    $sectionOne_header.appendTo($sectionOne);
+    $sectionOne_form.appendTo($sectionOne);
+    $sectionOne_select.appendTo($sectionOne_form);
+    $sectionOne_selectOption1.appendTo($sectionOne_select);
+    $sectionOne_selectOption2.appendTo($sectionOne_select);
+    $sectionOne_selectOption3.appendTo($sectionOne_select);
+
+    // $tableHeader.appendTo($tableWrapper);
+    // $tableHeaderColumnOne.appendTo($tableHeader);
+    // $tableHeaderColumnTwo.appendTo($tableHeader);
+    // $tableHeaderColumnThree.appendTo($tableHeader);
+    // $tableHeaderColumnFour.appendTo($tableHeader);
+    // $tableHeaderColumnFive.appendTo($tableHeader);
+    // $tableHeaderColumnSix.appendTo($tableHeader);
+    // $tableItemsWrapper.appendTo($tableWrapper);
+    // $tableButtons.appendTo($tableWrapper);
+    // $clearBtn.appendTo($tableButtons);
+    // $continueBtn.appendTo($tableButtons);
+  }
+
   _init(source) {
-    this._render();
+    this._renderTable();
+    this._renderForm();
 
     // fetch(source)
     //   .then(result => result.json())
