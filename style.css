@@ -2274,6 +2274,8 @@ li.feature-box_three::before {
           transform: scale(1.02);
 }
 .orderTable-container .orderTable-itemCard .itemCard-img {
+  height: 115px ;
+  min-width: 100px;
   margin-right: 21px;
 }
 .orderTable-container .orderTable-itemCard .itemCard-header {
