@@ -41,7 +41,6 @@ class OrderTable {
     $continueBtn.appendTo($tableButtons);
 
     $clearBtn.click(() => {
-
       this._clear();
     });
   }
@@ -135,7 +134,12 @@ class OrderTable {
 
   _renderSum() {
     // $('.sum-amount').text(`Всего товаров в корзине: ${this.countGoods}`);
+
     $('#subtotalSum').text(`$${Math.abs((this.subtotalSum).toFixed(2))}`);
+    // console.log(this);
+    // console.log(this.amount);
+    // console.log(this.shipping);
+    // $('#totalSum').text(`$${Math.abs((this.amount + this.shipping).toFixed(2))}`);
     $('#totalSum').text(`$${Math.abs((this.amount).toFixed(2))}`);
   }
 
@@ -179,14 +183,14 @@ class OrderTable {
 
     let shippingCost;
 
-    if (this.shipping === 0) {
+    if (product.shipping === 0) {
       shippingCost = 'FREE';
     } else {
-      shippingCost = this.shipping;
+      shippingCost = `$${(product.shipping).toFixed(2)}`;
     }
 
     let $column4 = $(`<div class="orderTable-column">${shippingCost}</div>`);
-    let $column5 = $(`<div class="orderTable-column">$${(product.quantity * product.price).toFixed(2)}</div>`);
+    let $column5 = $(`<div class="orderTable-column">$${(product.quantity * product.price + product.shipping).toFixed(2)}</div>`);
     let $column6 = $('<div class="orderTable-lastColumn"></div>');
     let $delBtn = $('<button class="orderTable-deleteButton"><i class="fas fa-times-circle"></i></button>');
 
@@ -209,6 +213,13 @@ class OrderTable {
     $column6.append($delBtn);
 
 
+    $itemQuantityInput.change(() => {
+      product.quantity = $itemQuantityInput[0].value;
+
+
+      // this._updateCart(product);
+    });
+
     $delBtn.click(() => {
       this._remove(product.id_product);
     });
@@ -222,12 +233,12 @@ class OrderTable {
     fetch(source)
       .then(result => result.json())
       .then(data => {
-        console.log(data);
         for (let product of data.contents) {
           this.cartItems.push(product);
           this._renderItem(product)
         }
         this.amount = data.amount;
+        this.shipping = data.shipping;
         this.countGoods = data.countGoods;
         this._renderSum();
       })
@@ -241,15 +252,28 @@ class OrderTable {
   _updateCart(product) {
     let $container = $(`div[data-product="${product.id_product}"]`);
     $container.find('.orderTable-quantity').val(product.quantity);
+    // this.countGoods = 0;
+
+    // for (let product of this.cartItems) {
+    //   this.countGoods += product.quantity;
+    // }
+    // console.log(this.countGoods);
+    // this.subtotalSum
     // $container.find('.cart-productQuantityPrice').text(`${product.quantity * product.price} руб`);
   }
 
 
   _remove(idProduct) {
     let find = this.cartItems.find(product => product.id_product === idProduct);
-    console.log(find.quantity);
     if (find.quantity > 1) {
       find.quantity--;
+      console.log(find);
+      console.log(find.id_product);
+
+      $(`div[data-product="${idProduct}"]`)[0].childNodes[4].innerText =
+        `$${find.quantity * find.price + find.shipping}`;
+      // $(`div[data-product="${idProduct}"]`)[0].innerText = '';
+
       this._updateCart(find)
     } else {
       this.cartItems.splice(this.cartItems.indexOf(find), 1);
@@ -257,6 +281,7 @@ class OrderTable {
     }
     this.countGoods--;
     this.amount -= find.price;
+
     // this.subtotalSum -= find.subtotal;
     this._renderSum();
   }
@@ -270,8 +295,8 @@ class OrderTable {
     this.amount = 0; // Общая стоимость товаров в корзине
     this.shipping = 0;
     this.cartItems = [];
-    console.log(this.cartItems);
-    console.log(this);
+    // console.log(this.cartItems);
+    // console.log(this);
     $('.orderTable-itemsWrapper')[0].innerText ='';
   }
 

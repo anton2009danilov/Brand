@@ -12,7 +12,8 @@
       "full_star": 4,
       "half_star": 1,
       "color": "Red",
-      "size": "Xll"
+      "size": "Xll",
+      "shipping": 0
     },
     {
       "id_product": 102,
@@ -24,7 +25,8 @@
       "full_star": 3,
       "half_star": 0,
       "color": "Yellow",
-      "size": "S"
+      "size": "S",
+      "shipping": 55
     }
   ]
 }
