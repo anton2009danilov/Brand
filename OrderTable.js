@@ -39,6 +39,11 @@ class OrderTable {
     $tableButtons.appendTo($tableWrapper);
     $clearBtn.appendTo($tableButtons);
     $continueBtn.appendTo($tableButtons);
+
+    $clearBtn.click(() => {
+
+      this._clear();
+    });
   }
 
   _renderForm() {
@@ -254,6 +259,20 @@ class OrderTable {
     this.amount -= find.price;
     // this.subtotalSum -= find.subtotal;
     this._renderSum();
+  }
+
+  _clear() {
+    // this.source = source;
+    // this.tableContainer = tableContainer;
+    // this.formsContainer = formsContainer;
+    this.countGoods = 0; // Общее кол-во товаров в корзине
+    this.subtotalSum = 0;
+    this.amount = 0; // Общая стоимость товаров в корзине
+    this.shipping = 0;
+    this.cartItems = [];
+    console.log(this.cartItems);
+    console.log(this);
+    $('.orderTable-itemsWrapper')[0].innerText ='';
   }
 
 }
