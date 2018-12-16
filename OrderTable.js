@@ -6,6 +6,7 @@ class OrderTable {
     this.countGoods = 0; // Общее кол-во товаров в корзине
     this.subtotalSum = 0;
     this.amount = 0; // Общая стоимость товаров в корзине
+    this.shipping = 0;
     this.cartItems = []; // Массив со всеми товарами
     this._init(this.source);
   }
@@ -165,23 +166,24 @@ class OrderTable {
     let $size = $(`<p class="itemCard-text">Size: ${product.size}</p>`);
 
 
-    let $column2 = $(`<div class="orderTable-column">$${product.price}</div>`);
+    let $column2 = $(`<div class="orderTable-column">$${product.price.toFixed(2)}</div>`);
     let $column3 = $('<div class="orderTable-column"></div>');
-    let itemQuantityForm = $(`<form action="#" class="orderTable-form"></form>`);
-    let itemQuantityInput = $(`<input class="orderTable-quantity" type="number" name="orderCount"
+    let $itemQuantityForm = $(`<form action="#" class="orderTable-form"></form>`);
+    let $itemQuantityInput = $(`<input class="orderTable-quantity" type="number" name="orderCount"
     value="${product.quantity}" min="1" max="100" step="1">`);
 
-    let $column4 = $('<div class="orderTable-column"></div>');
-    let $column5 = $('<div class="orderTable-column"></div>');
+    let shippingCost;
+
+    if (this.shipping === 0) {
+      shippingCost = 'FREE';
+    } else {
+      shippingCost = this.shipping;
+    }
+
+    let $column4 = $(`<div class="orderTable-column">${shippingCost}</div>`);
+    let $column5 = $(`<div class="orderTable-column">$${(product.quantity * product.price).toFixed(2)}</div>`);
     let $column6 = $('<div class="orderTable-lastColumn"></div>');
-
-    // let $productQuantityAndPrice = $(
-    //   `<p class="cart-ordered">
-    // <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
-    //  $<span class="cart-productPrice">${product.price}</span></p>`
-    // );
-
-    let $delBtn = $(`<button class="cart-deleteButton"><i class="fas fa-times-circle"></i></button>`)
+    let $delBtn = $('<button class="orderTable-deleteButton"><i class="fas fa-times-circle"></i></button>');
 
     $tableRow.appendTo($container);
     $tableRow.append($column1);
@@ -194,13 +196,13 @@ class OrderTable {
     $textBox.append($size);
     $tableRow.append($column2);
     $tableRow.append($column3);
-    $column3.append(itemQuantityForm);
-    $column3.append(itemQuantityInput);
+    $column3.append($itemQuantityForm);
+    $column3.append($itemQuantityInput);
+    $tableRow.append($column4);
+    $tableRow.append($column5);
+    $tableRow.append($column6);
+    $column6.append($delBtn);
 
-
-
-    // $textBox.append($productQuantityAndPrice);
-    // $tableRow.append($delBtn);
 
     $delBtn.click(() => {
       this._remove(product.id_product);
@@ -229,6 +231,29 @@ class OrderTable {
         let $cartProductSection = $('<section class="cart-productSection">В корзине нет товаров</section>');
         $cartProductSection.appendTo($('.orderTable-itemsWrapper'));
       })
+  }
+
+  _updateCart(product) {
+    let $container = $(`div[data-product="${product.id_product}"]`);
+    $container.find('.orderTable-quantity').val(product.quantity);
+    // $container.find('.cart-productQuantityPrice').text(`${product.quantity * product.price} руб`);
+  }
+
+
+  _remove(idProduct) {
+    let find = this.cartItems.find(product => product.id_product === idProduct);
+    console.log(find.quantity);
+    if (find.quantity > 1) {
+      find.quantity--;
+      this._updateCart(find)
+    } else {
+      this.cartItems.splice(this.cartItems.indexOf(find), 1);
+      $(`div[data-product="${idProduct}"]`).remove();
+    }
+    this.countGoods--;
+    this.amount -= find.price;
+    // this.subtotalSum -= find.subtotal;
+    this._renderSum();
   }
 
 }

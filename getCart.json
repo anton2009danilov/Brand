@@ -1,12 +1,12 @@
 {
-  "amount": 104.32,
-  "countGoods": 2,
+  "amount": 208.52,
+  "countGoods": 4,
   "contents": [
     {
       "id_product": 101,
       "product_name": "Mango People T-shirt (type1)",
       "price": 52.1,
-      "quantity": 1,
+      "quantity": 3,
       "href": "single-page.html",
       "src": "img/cart-product-img1.jpg",
       "full_star": 4,
