@@ -615,7 +615,7 @@ figure {
 .feature-offerLink {
   display: block;
   height: 100%;
-  width: 100%;
+  width: 67.28%;
   text-decoration: none;
   -webkit-transition: -webkit-filter .5s;
   transition: -webkit-filter .5s;
@@ -738,7 +738,7 @@ li.feature-box_three::before {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 219px;
+  width: 220px;
 }
 .featureBlock-box_content {
   display: -webkit-box;
