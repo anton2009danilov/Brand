@@ -133,13 +133,7 @@ class OrderTable {
   }
 
   _renderSum() {
-    // $('.sum-amount').text(`Всего товаров в корзине: ${this.countGoods}`);
-
     $('#subtotalSum').text(`$${Math.abs((this.subtotalSum).toFixed(2))}`);
-    // console.log(this);
-    // console.log(this.amount);
-    // console.log(this.shipping);
-    // $('#totalSum').text(`$${Math.abs((this.amount + this.shipping).toFixed(2))}`);
     $('#totalSum').text(`$${Math.abs((this.amount).toFixed(2))}`);
   }
 
@@ -221,11 +215,12 @@ class OrderTable {
 
       let amount = 0;
       for (let product of this.cartItems) {
-
         amount += product.quantity * product.price + product.shipping;
       }
       console.log(amount);
+      this.subtotalSum = amount;
       this.amount = amount;
+      this._renderSum();
       this._updateCart(product);
 
     });
@@ -248,6 +243,7 @@ class OrderTable {
           this._renderItem(product)
         }
         this.amount = data.amount;
+        this.subtotalSum = data.amount;
         this.shipping = data.shipping;
         this.countGoods = data.countGoods;
         this._renderSum();
@@ -272,13 +268,10 @@ class OrderTable {
     let find = this.cartItems.find(product => product.id_product === idProduct);
     if (find.quantity > 1) {
       find.quantity--;
-      // console.log(find);
-      // console.log(find.id_product);
 
       $(`div[data-product="${idProduct}"]`)[0].childNodes[4].innerText =
         `$${(find.quantity * find.price + find.shipping).toFixed(2)}`;
 
-      console.log($(`div[data-product="${idProduct}"]`).find('.orderTable-quantity')[0].value);
       ($(`div[data-product="${idProduct}"]`).find('.orderTable-quantity')[0].value) = find.quantity;
 
       // $(`div[data-product="${idProduct}"]`)[0].childNodes[4].innerText =
@@ -292,23 +285,20 @@ class OrderTable {
     }
     this.countGoods--;
     this.amount -= find.price;
+    this.subtotalSum -= find.price;
 
     // this.subtotalSum -= find.subtotal;
     this._renderSum();
   }
 
   _clear() {
-    // this.source = source;
-    // this.tableContainer = tableContainer;
-    // this.formsContainer = formsContainer;
     this.countGoods = 0; // Общее кол-во товаров в корзине
     this.subtotalSum = 0;
     this.amount = 0; // Общая стоимость товаров в корзине
     this.shipping = 0;
     this.cartItems = [];
-    // console.log(this.cartItems);
-    // console.log(this);
     $('.orderTable-itemsWrapper')[0].innerText ='';
+    this._renderSum();
   }
 
 }
