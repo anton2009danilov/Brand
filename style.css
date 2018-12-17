@@ -752,7 +752,7 @@ li.feature-box_three::before {
   margin-top: 25px;
 }
 .feature-box_header {
-  margin: 0;
+  margin: 7px 0 0 0;
   color: #fbfbfb;
   font-size: 20px;
   font-weight: 700;
