@@ -52,7 +52,8 @@ class Cart {
 
   _renderSum() {
     // $('.sum-amount').text(`Всего товаров в корзине: ${this.countGoods}`);
-    $('.cart-totalPrice').text(`$${Math.abs((this.amount).toFixed(2))}`);
+    // $('.cart-totalPrice').text(`$${Math.abs((this.amount).toFixed(2))}`);
+    $('.cart-totalPrice').text(`$${(this.amount).toFixed(2)}`);
   }
 
   _renderItem(product) {
@@ -69,7 +70,7 @@ class Cart {
     let $productQuantityAndPrice = $(
       `<p class="cart-ordered">
     <span class="cart-productQuantity">${product.quantity}</span> <span class="cart-ordered-x">x</span>
-     $<span class="cart-productPrice">${product.price}</span></p>`
+     $<span class="cart-productPrice">${(product.price).toFixed(2)}</span></p>`
     );
     let $sectionsWrapper = $('.cart-sectionsWrapper');
     let $delBtn = $(`<button class="cart-deleteButton"><i class="fas fa-times-circle"></i></button>`)

@@ -133,8 +133,8 @@ class OrderTable {
   }
 
   _renderSum() {
-    $('#subtotalSum').text(`$${Math.abs((this.subtotalSum).toFixed(2))}`);
-    $('#totalSum').text(`$${Math.abs((this.amount).toFixed(2))}`);
+    $('#subtotalSum').text(`$${(this.subtotalSum).toFixed(2)}`);
+    $('#totalSum').text(`$${(this.amount).toFixed(2)}`);
   }
 
   _renderItem(product) {
@@ -221,7 +221,7 @@ class OrderTable {
       this.subtotalSum = amount;
       this.amount = amount;
       this._renderSum();
-      this._updateCart(product);
+      // this._updateCart(product);
 
     });
 
@@ -255,13 +255,13 @@ class OrderTable {
       })
   }
 
-  _updateCart(product) {
-    let $tableContainer = $(`div[data-product="${product.id_product}"]`);
+  // _updateCart(product) {
+    // let $tableContainer = $(`div[data-product="${product.id_product}"]`);
     // console.log($tableContainer.find('.orderTable-quantity').text(product.quantity));
     // $tableContainer.find('.orderTable-quantity').val(product.quantity);
 
     // $container.find('.cart-productQuantityPrice').text(`${product.quantity * product.price} руб`);
-  }
+  // }
 
 
   _remove(idProduct) {
@@ -278,7 +278,7 @@ class OrderTable {
       //   `$${(find.quantity * find.price + find.shipping).toFixed(2)}`;
       // $(`div[data-product="${idProduct}"]`)[0].innerText = '';
 
-      this._updateCart(find)
+      // this._updateCart(find)
     } else {
       this.cartItems.splice(this.cartItems.indexOf(find), 1);
       $(`div[data-product="${idProduct}"]`).remove();
