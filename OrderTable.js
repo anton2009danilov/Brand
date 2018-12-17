@@ -216,11 +216,18 @@ class OrderTable {
     $itemQuantityInput.change(() => {
       console.log(product.quantity = $itemQuantityInput[0].value);
       product.quantity = $itemQuantityInput[0].value;
-
       $(`div[data-product="${product.id_product}"]`)[0].childNodes[4].innerText =
         `$${(product.quantity * product.price + product.shipping).toFixed(2)}`;
 
-      // this._updateCart(product);
+      let amount = 0;
+      for (let product of this.cartItems) {
+
+        amount += product.quantity * product.price + product.shipping;
+      }
+      console.log(amount);
+      this.amount = amount;
+      this._updateCart(product);
+
     });
 
     $delBtn.click(() => {
@@ -253,15 +260,10 @@ class OrderTable {
   }
 
   _updateCart(product) {
-    let $container = $(`div[data-product="${product.id_product}"]`);
-    $container.find('.orderTable-quantity').val(product.quantity);
-    // this.countGoods = 0;
+    let $tableContainer = $(`div[data-product="${product.id_product}"]`);
+    // console.log($tableContainer.find('.orderTable-quantity').text(product.quantity));
+    // $tableContainer.find('.orderTable-quantity').val(product.quantity);
 
-    // for (let product of this.cartItems) {
-    //   this.countGoods += product.quantity;
-    // }
-    // console.log(this.countGoods);
-    // this.subtotalSum
     // $container.find('.cart-productQuantityPrice').text(`${product.quantity * product.price} руб`);
   }
 
@@ -270,11 +272,17 @@ class OrderTable {
     let find = this.cartItems.find(product => product.id_product === idProduct);
     if (find.quantity > 1) {
       find.quantity--;
-      console.log(find);
-      console.log(find.id_product);
+      // console.log(find);
+      // console.log(find.id_product);
 
       $(`div[data-product="${idProduct}"]`)[0].childNodes[4].innerText =
-        `$${find.quantity * find.price + find.shipping}`;
+        `$${(find.quantity * find.price + find.shipping).toFixed(2)}`;
+
+      console.log($(`div[data-product="${idProduct}"]`).find('.orderTable-quantity')[0].value);
+      ($(`div[data-product="${idProduct}"]`).find('.orderTable-quantity')[0].value) = find.quantity;
+
+      // $(`div[data-product="${idProduct}"]`)[0].childNodes[4].innerText =
+      //   `$${(find.quantity * find.price + find.shipping).toFixed(2)}`;
       // $(`div[data-product="${idProduct}"]`)[0].innerText = '';
 
       this._updateCart(find)
