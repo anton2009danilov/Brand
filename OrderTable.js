@@ -214,8 +214,11 @@ class OrderTable {
 
 
     $itemQuantityInput.change(() => {
+      console.log(product.quantity = $itemQuantityInput[0].value);
       product.quantity = $itemQuantityInput[0].value;
 
+      $(`div[data-product="${product.id_product}"]`)[0].childNodes[4].innerText =
+        `$${(product.quantity * product.price + product.shipping).toFixed(2)}`;
 
       // this._updateCart(product);
     });
