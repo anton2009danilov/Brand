@@ -200,7 +200,7 @@ class OrderTable {
     $tableRow.append($column2);
     $tableRow.append($column3);
     $column3.append($itemQuantityForm);
-    $column3.append($itemQuantityInput);
+    $itemQuantityForm.append($itemQuantityInput);
     $tableRow.append($column4);
     $tableRow.append($column5);
     $tableRow.append($column6);
